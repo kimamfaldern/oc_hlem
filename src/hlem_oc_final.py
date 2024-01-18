@@ -780,8 +780,10 @@ def pattern_detection():
     object_handling['employees'] = False
     object_handling['customers'] = False
     
-    for i in range(114):
-        str_name = './hl_logs_new/hl_log' + str(i) + '.csv'
+    curr_path = os.getcwd()
+    parent_path = os.path.dirname(curr_path)
+    for i in range(105):
+        str_name = parent_path + '/hl_logs_new/hl_log' + str(i) + '.csv'
         input = pd.read_csv(str_name)
         print(len(input))
         df = pd.concat([df, input], ignore_index=True)
@@ -892,5 +894,5 @@ def pattern_detection():
     #print(df)
     #df.to_csv('hl_test.csv')
 
-main()
-#pattern_detection()
+#main()
+pattern_detection()
