@@ -785,13 +785,13 @@ def pattern_detection():
     for i in range(105):
         str_name = parent_path + '/hl_logs_new/hl_log' + str(i) + '.csv'
         input = pd.read_csv(str_name)
-        print(len(input))
         df = pd.concat([df, input], ignore_index=True)
 
-    print(df['event type'].unique())
+    df['id'] = df.index
     copy = df.copy()
+    print(copy.head(n=10))
 
-    #filter high load events by just keeping the highest loads per object type
+    #filter high load events by just keeping the highest loads per object type (above mittelwert)
     df = copy.copy()
     df_hl = df[df['event type']=='hl']
     df_hl = df_hl.astype({'frequency':'int'})
@@ -800,9 +800,7 @@ def pattern_detection():
         df_hl_obj = df_hl[df_hl['related object']==obj]
         if len(df_hl_obj['frequency'])>0:
             max_obj = int(max(df_hl_obj['frequency']))
-            print(max_obj)
-        filtered = df_hl_obj[df_hl_obj['frequency'].apply(lambda x: int(x) > (max_obj * 0.7))]
-        print(len(filtered))
+        filtered = df_hl_obj[df_hl_obj['frequency'].apply(lambda x: int(x) > (max_obj * 0.5))]
         filtered_df_hl = pd.concat([filtered_df_hl, filtered])
     #print(filtered_df_hl)
         
@@ -813,7 +811,7 @@ def pattern_detection():
     filtered_df_hd = df_hd.sort_values('frequency', ascending=False)
     num_hd = len(df_hd)
     filtered_df_hd = filtered_df_hd.head(n=int(num_hd/10))
-    print(filtered_df_hd)
+    #print(filtered_df_hd)
 
     #filter high overall load events by just keeping the above median freuquent ones
     df = copy.copy()
@@ -822,7 +820,7 @@ def pattern_detection():
     df_hol = df_hol.sort_values(by=['frequency'])
     half = int(len(df_hol)/2)
     df_hol.drop(df_hol.head(half).index,inplace=True)
-    #print(df_hol)
+    print(df_hol)
 
     #filter object type leaves process events
     df = copy.copy()
@@ -842,6 +840,7 @@ def pattern_detection():
     #filter join of object type events
     df = copy.copy()
     df_j = df[df['event type']=='j']
+    #print('len of join df: ' + str(len(df_j)))
     #print(df_j)
 
     #filter lagging time events by keeping those above 0.7*max lagging time
@@ -852,46 +851,332 @@ def pattern_detection():
     filtered_lt = df_lt.head(n=int(number_lt/10))
     #print(filtered_lt)
 
+    #low lagging time not yet implemented
+
     #look for patterns
-    #initialize lists for ralations
+    #initialize lists for relations
     #direct realtions
     direct_act1 = []
     direct_act2 = []
+    direct_id1 = []
+    direct_id2 = []
+    direct_time1 = []
+    direct_time2 = []
     #not direct realtions
     not_direct_act1 = []
     not_direct_act2 = []
+    not_direct_id1 = []
+    not_direct_id2 = []
+    not_direct_time1 = []
+    not_direct_time2 = []
+    #complete direct conditional relation
+    direct_con1 = []
+    direct_con2 = []
+    direct_con3 = []
+    direct_con_id1 = []
+    direct_con_id2 = []
+    direct_con_id3 = []
+    direct_con_time1 = []
+    direct_con_time2 = []
+    direct_con_time3 = []
+    #not complete direct conditianl relation
+    not_direct_con1 = []
+    not_direct_con2 = []
+    not_direct_con3 = []
+    not_direct_con_id1 = []
+    not_direct_con_id2 = []
+    not_direct_con_id3 = []
+    not_direct_con_time1 = []
+    not_direct_con_time2 = []
+    not_direct_con_time3 = []
+    #lagging time focused relations
     filtered_lt.sort_values('time segment', ascending=False, inplace=True)
     for index, row in filtered_lt.iterrows():
         curr_time_seg = row['time segment']
         curr_obj = row['related object']
-        print('current obj: ' + curr_obj)
-        print(type(curr_obj))
         if curr_obj in objects:
             #look for relation hl->lt
-            print('test')
-            #TODO: adapt lagging time implementation to distinguish between object instances and types
+            tmp_df = filtered_df_hl.copy()
+            tmp_df.sort_values('time segment')# not really necessary
+            tmp_df = tmp_df[tmp_df['time segment']<curr_time_seg]
+            for i, r in tmp_df.iterrows():
+                rel_obj = r['related object']
+                if rel_obj==curr_obj:
+                    if r['time segment'] == curr_time_seg - 1:
+                        direct_act1.append(r['event'])
+                        direct_time1.append(r['time segment'])
+                        direct_id1.append(r['id'])
+                        direct_act2.append(row['event'])
+                        direct_time2.append(row['time segment'])
+                        direct_id2.append(row['id'])
+                    else:
+                        not_direct_act1.append(r['event'])
+                        not_direct_time1.append(r['time segment'])
+                        not_direct_id1.append(r['id'])
+                        not_direct_act2.append(row['event'])
+                        not_direct_time2.append(row['time segment'])
+                        not_direct_id2.append(row['id'])
+            #look for relation s->lt with object types
+            tmp_df = df_s.copy()
+            tmp_df.sort_values('time segment')# not really necessary
+            tmp_df = tmp_df[tmp_df['time segment']<curr_time_seg]
+            for i, r in tmp_df.iterrows():
+                rel_obj = r['related object']
+                #workaround because event is not properly implemented yet
+                #TODO: implement split event such that object type gets listed
+                if curr_obj=='items':
+                    if rel_obj.find('i-')>0 or rel_obj.find('items')>0:
+                        if r['time segment'] == curr_time_seg - 1:
+                            direct_act1.append(r['event'])
+                            direct_time1.append(r['time segment'])
+                            direct_id1.append(r['id'])
+                            direct_act2.append(row['event'])
+                            direct_time2.append(row['time segment'])
+                            direct_id2.append(row['id'])
+                        else:
+                            not_direct_act1.append(r['event'])
+                            not_direct_time1.append(r['time segment'])
+                            not_direct_id1.append(r['id'])
+                            not_direct_act2.append(row['event'])
+                            not_direct_time2.append(row['time segment'])
+                            not_direct_id2.append(row['id'])
+                if curr_obj=='orders':
+                    if rel_obj.find('o-')>0 or rel_obj.find('orders')>0:
+                        if r['time segment'] == curr_time_seg - 1:
+                            direct_time1.append(r['time segment'])
+                            direct_id1.append(r['id'])
+                            direct_act1.append(r['event'])
+                            direct_act2.append(row['event'])
+                            direct_time2.append(row['time segment'])
+                            direct_id2.append(row['id'])
+                        else:
+                            not_direct_time1.append(r['time segment'])
+                            not_direct_id1.append(r['id'])
+                            not_direct_act1.append(r['event'])
+                            not_direct_act2.append(row['event'])
+                            not_direct_time2.append(row['time segment'])
+                            not_direct_id2.append(row['id'])
+                if curr_obj=='packages':
+                    if rel_obj.find('p-')>0 or rel_obj.find('packages')>0:
+                        if rel_obj==curr_obj:
+                            if r['time segment'] == curr_time_seg - 1:
+                                direct_time1.append(r['time segment'])
+                                direct_id1.append(r['id'])
+                                direct_act1.append(r['event'])
+                                direct_act2.append(row['event'])
+                                direct_time2.append(row['time segment'])
+                                direct_id2.append(row['id'])
+                            else:
+                                not_direct_time1.append(r['time segment'])
+                                not_direct_id1.append(r['id'])
+                                not_direct_act1.append(r['event'])
+                                not_direct_act2.append(row['event'])
+                                not_direct_time2.append(row['time segment'])
+                                not_direct_id2.append(row['id'])
+            #look for relation j->lt with object types and hl->j->lt
+            tmp_df = df_j.copy()
+            tmp_df.sort_values('time segment')# not really necessary
+            tmp_df = tmp_df[tmp_df['time segment']<curr_time_seg]
+            for i, r in tmp_df.iterrows():
+                first_cond = False
+                rel_obj = r['related object']
+                #workaround because event is not properly implemented yet
+                #TODO: implement split event such that object type gets listed
+                if curr_obj=='items':
+                    if rel_obj.find('i-')>0 or rel_obj.find('items')>0:
+                        first_cond = True
+                        mid_time = r['time segment']
+                        second_event = r['event']
+                        third_event = row['event']
+                        if r['time segment'] == curr_time_seg - 1:
+                            direct_time1.append(r['time segment'])
+                            direct_id1.append(r['id'])
+                            direct_act1.append(r['event'])
+                            direct_act2.append(row['event'])
+                            direct_time2.append(row['time segment'])
+                            direct_id2.append(row['id'])
+                        else:
+                            not_direct_time1.append(r['time segment'])
+                            not_direct_id1.append(r['id'])
+                            not_direct_act1.append(r['event'])
+                            not_direct_act2.append(row['event'])
+                            not_direct_time2.append(row['time segment'])
+                            not_direct_id2.append(row['id'])
+                if curr_obj=='orders':
+                    if rel_obj.find('o-')>0 or rel_obj.find('orders')>0:
+                        first_cond = True
+                        mid_time = r['time segment']
+                        second_event = r['event']
+                        third_event = row['event']
+                        if r['time segment'] == curr_time_seg - 1:
+                            direct_time1.append(r['time segment'])
+                            direct_id1.append(r['id'])
+                            direct_act1.append(r['event'])
+                            direct_act2.append(row['event'])
+                            direct_time2.append(row['time segment'])
+                            direct_id2.append(row['id'])
+                        else:
+                            not_direct_time1.append(r['time segment'])
+                            not_direct_id1.append(r['id'])
+                            not_direct_act1.append(r['event'])
+                            not_direct_act2.append(row['event'])
+                            not_direct_time2.append(row['time segment'])
+                            not_direct_id2.append(row['id'])
+                if curr_obj=='packages':
+                    if rel_obj.find('p-')>0 or rel_obj.find('packages')>0:
+                        first_cond = True
+                        mid_time = r['time segment']
+                        second_event = r['event']
+                        third_event = row['event']
+                        if rel_obj==curr_obj:
+                            if r['time segment'] == curr_time_seg - 1:
+                                direct_act1.append(r['event'])
+                                direct_time1.append(r['time segment'])
+                                direct_id1.append(r['id'])
+                                direct_act2.append(row['event'])
+                                direct_time2.append(row['time segment'])
+                                direct_id2.append(row['id'])
+                            else:
+                                not_direct_act1.append(r['event'])
+                                not_direct_time1.append(r['time segment'])
+                                not_direct_id1.append(r['id'])
+                                not_direct_act2.append(row['event'])
+                                not_direct_time2.append(row['time segment'])
+                                not_direct_id2.append(row['id'])
+                if first_cond:
+                    tmp_df2 = filtered_df_hl.copy()
+                    tmp_df2.sort_values('time segment')# not really necessary
+                    tmp_df2 = tmp_df2[tmp_df2['time segment']<mid_time]
+                    for ind, ro in tmp_df2.iterrows():
+                        first_obj = ro['related object']
+                        if first_obj==curr_obj:
+                            first_event = ro['event']
+                            if mid_time==curr_time_seg-1 and ro['time segment']==mid_time-1:
+                                direct_con1.append(first_event)
+                                direct_con_time1.append(ro['time segment'])
+                                direct_con_id1.append(ro['id'])
+                                direct_con2.append(second_event)
+                                direct_con_time2.append(r['time segment'])
+                                direct_con_id2.append(r['id'])
+                                direct_con3.append(third_event)
+                                direct_con_time3.append(row['time segment'])
+                                direct_con_id3(row['id'])
+                            else:
+                                not_direct_con1.append(first_event)
+                                not_direct_con_time1.append(ro['time segment'])
+                                not_direct_con_id1.append(ro['id'])
+                                not_direct_con2.append(second_event)
+                                not_direct_con_time2.append(r['time segment'])
+                                not_direct_con_id2.append(r['id'])
+                                not_direct_con3.append(third_event)
+                                not_direct_con_time3.append(row['time segment'])
+                                not_direct_con_id3(row['id'])
         else:
             #look for relation hd->lt
             tmp_df = filtered_df_hd.copy()
             tmp_df.sort_values('time segment')# not really necessary
             tmp_df = tmp_df[tmp_df['time segment']<curr_time_seg]
-            print('length of tmp_df: ' + str(len(tmp_df)))
             for i, r in tmp_df.iterrows():
                 rel_obj = r['related object']
-                print('related object: ' + rel_obj)
-                print(type(rel_obj))
-                #print('related object: ' + rel_obj)
                 if curr_obj.find(rel_obj)>0:
                     if r['time segment'] == curr_time_seg - 1:
                         direct_act1.append(r['event'])
+                        direct_time1.append(r['time segment'])
+                        direct_id1.append(r['id'])
                         direct_act2.append(row['event'])
+                        direct_time2.append(row['time segment'])
+                        direct_id2.append(row['id'])
                     else:
                         not_direct_act1.append(r['event'])
+                        not_direct_time1.append(r['time segment'])
+                        not_direct_id1.append(r['id'])
                         not_direct_act2.append(row['event'])
-    for i in range(len(not_direct_act1)):
-        text = not_direct_act1[i] + '->' + not_direct_act2[i]
-        print(text)
-    #print(df)
+                        not_direct_time2.append(row['time segment'])
+                        not_direct_id2.append(row['id'])
+            #look for relation s->lt for object instance
+            tmp_df = df_s.copy()
+            tmp_df.sort_values('time segment')# not really necessary
+            tmp_df = tmp_df[tmp_df['time segment']<curr_time_seg]
+            for i, r in tmp_df.iterrows():
+                rel_obj = r['related object']
+                if rel_obj.find(curr_obj)>0:
+                    if r['time segment'] == curr_time_seg - 1:
+                        direct_act1.append(r['event'])
+                        direct_time1.append(r['time segment'])
+                        direct_id1.append(r['id'])
+                        direct_act2.append(row['event'])
+                        direct_time2.append(row['time segment'])
+                        direct_id2.append(row['id'])
+                    else:
+                        not_direct_act1.append(r['event'])
+                        not_direct_time1.append(r['time segment'])
+                        not_direct_id1.append(r['id'])
+                        not_direct_act2.append(row['event'])
+                        not_direct_time2.append(row['time segment'])
+                        not_direct_id2.append(row['id'])
+            #look for relation j->lt and hd->j->lt
+            tmp_df = df_j.copy()
+            tmp_df.sort_values('time segment')# not really necessary
+            tmp_df = tmp_df[tmp_df['time segment']<curr_time_seg]
+            for i, r in tmp_df.iterrows():
+                rel_obj = r['related object']
+                if rel_obj.find(curr_obj)>0:
+                    if r['time segment'] == curr_time_seg - 1:
+                        direct_act1.append(r['event'])
+                        direct_time1.append(r['time segment'])
+                        direct_id1.append(r['id'])
+                        direct_act2.append(row['event'])
+                        direct_time2.append(row['time segment'])
+                        direct_id2.append(row['id'])
+                    else:
+                        not_direct_act1.append(r['event'])
+                        not_direct_time1.append(r['time segment'])
+                        not_direct_id1.append(r['id'])
+                        not_direct_act2.append(row['event'])
+                        not_direct_time2.append(row['time segment'])
+                        not_direct_id2.append(row['id'])
+                    tmp_df2 = filtered_df_hd.copy()
+                    tmp_df2.sort_values('time segment')# not really necessary
+                    tmp_df2 = tmp_df2[tmp_df2['time segment']<mid_time]  
+                    for ind, ro in tmp_df2.iterrows():
+                        third_obj = r['related object']
+                        if third_obj.find(curr_obj)>0:
+                            if r['time segment']==curr_time_seg-1 and ro['time segment']==r['time segment']-1:
+                                direct_con1.append(first_event)
+                                direct_con_time1.append(ro['time segment'])
+                                direct_con_id1.append(ro['id'])
+                                direct_con2.append(second_event)
+                                direct_con_time2.append(r['time segment'])
+                                direct_con_id2.append(r['id'])
+                                direct_con3.append(third_event)
+                                direct_con_time3.append(row['time segment'])
+                                direct_con_id3(row['id'])
+                            else:
+                                not_direct_con1.append(first_event)
+                                not_direct_con_time1.append(ro['time segment'])
+                                not_direct_con_id1.append(ro['id'])
+                                not_direct_con2.append(second_event)
+                                not_direct_con_time2.append(r['time segment'])
+                                not_direct_con_id2.append(r['id'])
+                                not_direct_con3.append(third_event)
+                                not_direct_con_time3.append(row['time segment'])
+                                not_direct_con_id3(row['id'])
+
+    #object occurence based relations
+    df_hol.sort_values('time segment', ascending=False, inplace=True)
+    for index, row in df_hol.iterrows():
+        print('test')
+
+    d = {'event1': not_direct_act1, 'id1': not_direct_id1, 'time1': not_direct_time1, 'event2': not_direct_act2, 'id2': not_direct_id2, 'time2': not_direct_time2}
+    hl_log = pd.DataFrame(data=d)
+    print(hl_log[5:91])
+    #for i in range(len(not_direct_act1)):
+        #text = not_direct_act1[i] + '->' + not_direct_act2[i]
+        #print(text)
+    print('len of cond: ' + str(len(not_direct_con1)))
+    for i in range(len(not_direct_con1)):
+        text = '(' + not_direct_con1[i] + '->' + not_direct_con2[i] + ')->' + not_direct_con3[i]
+        #print(text)
     #df.to_csv('hl_test.csv')
 
 #main()
