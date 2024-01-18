@@ -1,0 +1,140 @@
+,event,event type,frequency,start time,end time,time segment,quasi case id,related object
+0,high demand of products: iPad Pro,hd,35,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,,iPad Pro
+1,high demand of employees: Marco Pegoraro,hd,22,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,,Marco Pegoraro
+2,high demand of customers: AlpenTech Innovations AG,hd,10,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,,AlpenTech Innovations AG
+3,high load of object type orders,hl,24,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,,orders
+4,high load of object type items,hl,110,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,,items
+5,high load of object type packages,hl,4,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,,packages
+6,high load (over all object types),hol,182,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,,
+7,object Jan Niklas Adams leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,2.0,Jan Niklas Adams
+8,object type orders leaves the process in activity confirm order,tl,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,2.0,orders
+9,object Nina Graves leaves the process in activity pick item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,2.0,Nina Graves
+10,"object split in activity pay order with objects ['i-880066', 'Echo Plus', 'iPad']",s,3,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,2.0,"['i-880066', 'Echo Plus', 'iPad']"
+11,object Detlef Wetzeler leaves the process in activity item out of stock,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,2.0,Detlef Wetzeler
+12,high lagging time of object typeitems for activity item out of stock,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,2.0,items
+13,object Detlef Wetzeler joins the process in activity item out of stock,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,2.0,Detlef Wetzeler
+14,object iPad mini joins the process in activity item out of stock,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,2.0,iPad mini
+15,high lagging time of object ['Benedikt Knopp'] for activity create package,lt,5 days 20:07:52,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,2.0,['Benedikt Knopp']
+16,"object join in activity create package with objects ['Benedikt Knopp', 'Kindle Paperwhite', 'iPad Pro', 'iPhone 8', 'Echo Plus', 'iPad']",j,6,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,2.0,"['Benedikt Knopp', 'Kindle Paperwhite', 'iPad Pro', 'iPhone 8', 'Echo Plus', 'iPad']"
+17,high lagging time of object ['Mahsa Bafrani'] for activity reorder item,lt,1 days 16:31:49,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,2.0,['Mahsa Bafrani']
+18,"object join in activity reorder item with objects ['Mahsa Bafrani', 'iPad mini']",j,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,2.0,"['Mahsa Bafrani', 'iPad mini']"
+19,object type split in activity confirm order with object types ['items'],s,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,3.0,['items']
+20,"object split in activity pick item with objects ['i-880017', 'Detlef Wetzeler']",s,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,3.0,"['i-880017', 'Detlef Wetzeler']"
+21,"object split in activity create package with objects ['Echo Show 8', 'Echo', 'Echo Dot', 'Echo Show 8', 'Fire Stick 4K', 'Kindle Paperwhite', 'iPhone 8']",s,7,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,3.0,"['Echo Show 8', 'Echo', 'Echo Dot', 'Echo Show 8', 'Fire Stick 4K', 'Kindle Paperwhite', 'iPhone 8']"
+22,object Christopher Schwanen leaves the process in activity pick item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,3.0,Christopher Schwanen
+23,object type items leaves the process in activity pick item,tl,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,3.0,items
+24,high lagging time of object ['Echo Show 8'] for activity pick item,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,3.0,['Echo Show 8']
+25,high lagging time of object ['Christopher Schwanen'] for activity pick item,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,3.0,['Christopher Schwanen']
+26,high lagging time of object ['Detlef Wetzeler'] for activity send package,lt,5 days 22:38:04,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,3.0,['Detlef Wetzeler']
+27,"object join in activity send package with objects ['Detlef Wetzeler', 'Echo', 'Echo Dot', 'Fire Stick 4K', 'Kindle Paperwhite', 'iPhone 8']",j,6,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,3.0,"['Detlef Wetzeler', 'Echo', 'Echo Dot', 'Fire Stick 4K', 'Kindle Paperwhite', 'iPhone 8']"
+28,object Balkan Minerals d.o.o. leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,Balkan Minerals d.o.o.
+29,object Mara Nitschke leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,Mara Nitschke
+30,object Christopher Schwanen leaves the process in activity pick item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,Christopher Schwanen
+31,object Detlef Wetzeler leaves the process in activity pick item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,Detlef Wetzeler
+32,"object split in activity pick item with objects ['Echo Studio', 'Marco Pegoraro']",s,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,"['Echo Studio', 'Marco Pegoraro']"
+33,object Nina Graves leaves the process in activity pick item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,Nina Graves
+34,object Marco Pegoraro leaves the process in activity create package,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,Marco Pegoraro
+35,object Yisong Zhang leaves the process in activity send package,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,Yisong Zhang
+36,"high lagging time of object ['MacBook Air', 'iPad Pro'] for activity pay order",lt,6 days 01:22:14,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,"['MacBook Air', 'iPad Pro']"
+37,"object join in activity pay order with objects ['MacBook Air', 'iPad Pro', 'iPad']",j,3,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,"['MacBook Air', 'iPad Pro', 'iPad']"
+38,high lagging time of object ['Marco Pegoraro'] for activity create package,lt,5 days 04:40:07,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,['Marco Pegoraro']
+39,"object join in activity create package with objects ['Marco Pegoraro', 'Echo Show 5', 'Echo Studio', 'MacBook Air', 'iPad', 'iPad Pro', 'iPhone 11 Pro']",j,7,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,"['Marco Pegoraro', 'Echo Show 5', 'Echo Studio', 'MacBook Air', 'iPad', 'iPad Pro', 'iPhone 11 Pro']"
+40,"high lagging time of object ['Echo Show 5', 'Echo Studio', 'MacBook Air', 'iPad', 'iPad Pro', 'iPhone 11 Pro'] for activity send package",lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,"['Echo Show 5', 'Echo Studio', 'MacBook Air', 'iPad', 'iPad Pro', 'iPhone 11 Pro']"
+41,high lagging time of object typepackages for activity send package,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,packages
+42,object Yisong Zhang joins the process in activity send package,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,Yisong Zhang
+43,object Majid Rafiei joins the process in activity send package,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,Majid Rafiei
+44,"high lagging time of object ['Echo Show 5', 'Echo Studio', 'MacBook Air', 'iPad', 'iPad Pro', 'iPhone 11 Pro'] for activity package delivered",lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,"['Echo Show 5', 'Echo Studio', 'MacBook Air', 'iPad', 'iPad Pro', 'iPhone 11 Pro']"
+45,high lagging time of object ['Majid Rafiei'] for activity package delivered,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,['Majid Rafiei']
+46,high lagging time of object typepackages for activity package delivered,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,5.0,packages
+47,object Istvan Koren leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,Istvan Koren
+48,"object split in activity pick item with objects ['iPhone 8', 'Leah Tacke genannt Unterberg']",s,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,"['iPhone 8', 'Leah Tacke genannt Unterberg']"
+49,object Marco Pegoraro leaves the process in activity pick item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,Marco Pegoraro
+50,"object split in activity place order with objects ['iPad Pro', 'Fire Stick 4K', 'iPad Air', 'iPad Pro', 'iPhone 11 Pro', 'iPhone 8']",s,6,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,"['iPad Pro', 'Fire Stick 4K', 'iPad Air', 'iPad Pro', 'iPhone 11 Pro', 'iPhone 8']"
+51,object Leah Tacke genannt Unterberg leaves the process in activity pick item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,Leah Tacke genannt Unterberg
+52,object Fire Stick 4K leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,Fire Stick 4K
+53,object Riviera Robotics SAS leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,Riviera Robotics SAS
+54,object iPhone 8 leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,iPhone 8
+55,object iPad Air leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,iPad Air
+56,object Christine von Dobbert leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,Christine von Dobbert
+57,object iPad Pro leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,iPad Pro
+58,high lagging time of object ['Riviera Robotics SAS'] for activity place order,lt,6 days 17:40:25,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,['Riviera Robotics SAS']
+59,"object join in activity place order with objects ['Riviera Robotics SAS', 'iPad Air']",j,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,"['Riviera Robotics SAS', 'iPad Air']"
+60,high lagging time of object ['Leah Tacke genannt Unterberg'] for activity pick item,lt,2 days 01:38:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,['Leah Tacke genannt Unterberg']
+61,"object join in activity pick item with objects ['Leah Tacke genannt Unterberg', 'iPad Pro']",j,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,"['Leah Tacke genannt Unterberg', 'iPad Pro']"
+62,"high lagging time of object ['Fire Stick 4K', 'iPad Air', 'iPhone 11 Pro', 'iPhone 8'] for activity confirm order",lt,0 days 03:11:24,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,"['Fire Stick 4K', 'iPad Air', 'iPhone 11 Pro', 'iPhone 8']"
+63,high lagging time of object ['Riviera Robotics SAS'] for activity confirm order,lt,0 days 03:11:24,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,['Riviera Robotics SAS']
+64,"object join in activity confirm order with objects ['Fire Stick 4K', 'iPad Air', 'iPhone 11 Pro', 'iPhone 8', 'iPad Pro']",j,5,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,"['Fire Stick 4K', 'iPad Air', 'iPhone 11 Pro', 'iPhone 8', 'iPad Pro']"
+65,high lagging time of object ['Christopher Schwanen'] for activity pick item,lt,6 days 00:39:34,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,['Christopher Schwanen']
+66,"object join in activity pick item with objects ['Christopher Schwanen', 'iPhone 11 Pro']",j,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,6.0,"['Christopher Schwanen', 'iPhone 11 Pro']"
+67,object Benedikt Knopp leaves the process in activity pick item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,10.0,Benedikt Knopp
+68,object Eastern Oak Insurance Zrt. leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,10.0,Eastern Oak Insurance Zrt.
+69,object Mara Nitschke leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,10.0,Mara Nitschke
+70,object Christopher Schwanen leaves the process in activity pick item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,10.0,Christopher Schwanen
+71,high lagging time of object ['Christopher Schwanen'] for activity pick item,lt,5 days 17:47:22,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,10.0,['Christopher Schwanen']
+72,"object join in activity pick item with objects ['Christopher Schwanen', 'Echo Studio']",j,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,10.0,"['Christopher Schwanen', 'Echo Studio']"
+73,high lagging time of object ['iPad'] for activity pick item,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,10.0,['iPad']
+74,object Leah Tacke genannt Unterberg joins the process in activity pick item,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,10.0,Leah Tacke genannt Unterberg
+75,high lagging time of object ['iPad mini'] for activity pay order,lt,1 days 18:30:09,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,10.0,['iPad mini']
+76,"object join in activity pay order with objects ['iPad mini', 'Echo Show 8']",j,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,10.0,"['iPad mini', 'Echo Show 8']"
+77,high lagging time of object ['iPad Pro'] for activity pick item,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,10.0,['iPad Pro']
+78,object Marco Pegoraro joins the process in activity pick item,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,10.0,Marco Pegoraro
+79,object SwissPeak Timepieces AG leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,11.0,SwissPeak Timepieces AG
+80,object Christine von Dobbert leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,11.0,Christine von Dobbert
+81,high lagging time of object ['Echo Dot'] for activity pick item,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,11.0,['Echo Dot']
+82,object Benedikt Knopp joins the process in activity pick item,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,11.0,Benedikt Knopp
+83,"object split in activity confirm order with objects ['Iberian Sun Solaridades SA', 'iPad mini']",s,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,"['Iberian Sun Solaridades SA', 'iPad mini']"
+84,object Detlef Wetzeler leaves the process in activity pick item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,Detlef Wetzeler
+85,object Mahsa Bafrani leaves the process in activity pick item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,Mahsa Bafrani
+86,"object split in activity place order with objects ['Iberian Sun Solaridades SA', 'Echo Show 5', 'Kindle', 'Kindle Paperwhite', 'MacBook Air', 'iPad']",s,6,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,"['Iberian Sun Solaridades SA', 'Echo Show 5', 'Kindle', 'Kindle Paperwhite', 'MacBook Air', 'iPad']"
+87,object Echo leaves the process in activity pay order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,Echo
+88,object iPad mini leaves the process in activity pay order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,iPad mini
+89,object iPad Air leaves the process in activity place order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,iPad Air
+90,object iPhone 8 leaves the process in activity place order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,iPhone 8
+91,object Echo Plus leaves the process in activity place order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,Echo Plus
+92,high lagging time of object ['Iberian Sun Solaridades SA'] for activity place order,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,['Iberian Sun Solaridades SA']
+93,object MacBook Air joins the process in activity place order,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,MacBook Air
+94,object Kindle Paperwhite joins the process in activity place order,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,Kindle Paperwhite
+95,object Kindle joins the process in activity place order,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,Kindle
+96,object Echo Show 5 joins the process in activity place order,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,Echo Show 5
+97,object iPad joins the process in activity place order,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,iPad
+98,high lagging time of object ['iPad mini'] for activity pay order,lt,0 days 23:34:41,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,['iPad mini']
+99,"object join in activity pay order with objects ['iPad mini', 'Echo Plus']",j,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,"['iPad mini', 'Echo Plus']"
+100,high lagging time of object ['Iberian Sun Solaridades SA'] for activity place order,lt,0 days 02:11:01,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,['Iberian Sun Solaridades SA']
+101,"object join in activity place order with objects ['Iberian Sun Solaridades SA', 'Echo Plus']",j,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,"['Iberian Sun Solaridades SA', 'Echo Plus']"
+102,"high lagging time of object ['Echo Show 5', 'Kindle', 'Kindle Paperwhite', 'MacBook Air', 'iPad'] for activity confirm order",lt,0 days 19:46:36,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,"['Echo Show 5', 'Kindle', 'Kindle Paperwhite', 'MacBook Air', 'iPad']"
+103,object Mara Nitschke joins the process in activity confirm order,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,14.0,Mara Nitschke
+104,object Nordica Systems GmbH leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,15.0,Nordica Systems GmbH
+105,object Wil van der Aalst leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,15.0,Wil van der Aalst
+106,object iPad leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,15.0,iPad
+107,high lagging time of object ['Echo Studio'] for activity pick item,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,15.0,['Echo Studio']
+108,object Benedikt Knopp joins the process in activity pick item,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,15.0,Benedikt Knopp
+109,high lagging time of object ['Marco Pegoraro'] for activity pick item,lt,0 days 17:16:31,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,15.0,['Marco Pegoraro']
+110,"object join in activity pick item with objects ['Marco Pegoraro', 'iPhone 11']",j,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,15.0,"['Marco Pegoraro', 'iPhone 11']"
+111,"object split in activity confirm order with objects ['Echo Plus', 'Fire Stick 4K']",s,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,"['Echo Plus', 'Fire Stick 4K']"
+112,object Benedikt Knopp leaves the process in activity item out of stock,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,Benedikt Knopp
+113,object Marco Pegoraro leaves the process in activity item out of stock,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,Marco Pegoraro
+114,object Echo Plus leaves the process in activity pick item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,Echo Plus
+115,object Echo Dot leaves the process in activity reorder item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,Echo Dot
+116,high lagging time of object ['Echo Plus'] for activity pick item,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,['Echo Plus']
+117,object Christopher Schwanen joins the process in activity pick item,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,Christopher Schwanen
+118,high lagging time of object ['iPad mini'] for activity reorder item,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,['iPad mini']
+119,object Nina Graves joins the process in activity reorder item,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,Nina Graves
+120,high lagging time of object ['Echo Dot'] for activity reorder item,lt,1 days 03:09:40,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,['Echo Dot']
+121,"object join in activity reorder item with objects ['Echo Dot', 'Christopher Schwanen']",j,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,"['Echo Dot', 'Christopher Schwanen']"
+122,high lagging time of object ['Fire Stick 4K'] for activity item out of stock,lt,1 days 22:22:51,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,['Fire Stick 4K']
+123,"object join in activity item out of stock with objects ['Fire Stick 4K', 'Christopher Schwanen']",j,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,16.0,"['Fire Stick 4K', 'Christopher Schwanen']"
+124,object Echo Show 5 leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,17.0,Echo Show 5
+125,object AlpenTech Innovations AG leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,17.0,AlpenTech Innovations AG
+126,object Wil van der Aalst leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,17.0,Wil van der Aalst
+127,object Echo Dot leaves the process in activity reorder item,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,17.0,Echo Dot
+128,high lagging time of object ['Kindle Paperwhite'] for activity pick item,lt,0 days 03:04:04,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,17.0,['Kindle Paperwhite']
+129,"object join in activity pick item with objects ['Kindle Paperwhite', 'Detlef Wetzeler']",j,2,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,17.0,"['Kindle Paperwhite', 'Detlef Wetzeler']"
+130,object iPad Air leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,19.0,iPad Air
+131,object Fire Stick leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,19.0,Fire Stick
+132,object Pantheon Art Gallery Kft. leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,19.0,Pantheon Art Gallery Kft.
+133,object Jan Niklas Adams leaves the process in activity confirm order,ol,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,19.0,Jan Niklas Adams
+134,"high lagging time of object ['Fire Stick', 'iPad Air', 'iPhone 11'] for activity confirm order",lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,19.0,"['Fire Stick', 'iPad Air', 'iPhone 11']"
+135,high lagging time of object ['Pantheon Art Gallery Kft.'] for activity confirm order,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,19.0,['Pantheon Art Gallery Kft.']
+136,object Jan Niklas Adams joins the process in activity confirm order,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,19.0,Jan Niklas Adams
+137,high lagging time of object ['iPhone 11'] for activity pick item,lt,0 days 00:00:00,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,19.0,['iPhone 11']
+138,object Marco Pegoraro joins the process in activity pick item,oj,1,2023-04-10 12:16:12.773364485,2023-04-11 12:17:20.598130840,8,19.0,Marco Pegoraro

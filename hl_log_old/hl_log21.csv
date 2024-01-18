@@ -1,0 +1,69 @@
+,event,event type,frequency,start time,end time,time segment,quasi case id,related object
+0,high demand of products: iPad Pro,hd,33,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,,iPad Pro
+1,high demand of employees: Marco Pegoraro,hd,19,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,,Marco Pegoraro
+2,high demand of employees: Detlef Wetzeler,hd,19,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,,Detlef Wetzeler
+3,high demand of customers: AlpenTech Innovations AG,hd,10,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,,AlpenTech Innovations AG
+4,high load of object type orders,hl,23,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,,orders
+5,high load of object type items,hl,107,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,,items
+6,high load of object type packages,hl,4,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,,packages
+7,high load (over all object types),hol,174,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,,
+8,object type split in activity confirm order with object types ['items'],s,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,['items']
+9,high lagging time of object typeitems for activity create package,lt,0 days 01:55:10,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,items
+10,object type join in activity create package with objects ['items'],j,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,['items']
+11,high lagging time of object typeitems for activity pick item,lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,items
+12,object Christopher Schwanen joins the process in activity pick item,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,Christopher Schwanen
+13,high lagging time of object typeitems for activity send package,lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,items
+14,object Fire Stick 4K joins the process in activity send package,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,Fire Stick 4K
+15,object Eduardo Goulart Rocha joins the process in activity send package,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,Eduardo Goulart Rocha
+16,object Echo joins the process in activity send package,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,Echo
+17,object Echo Show 8 joins the process in activity send package,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,Echo Show 8
+18,object type packages joins the process in activity send package,tj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,packages
+19,object Echo Dot joins the process in activity send package,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,Echo Dot
+20,object Detlef Wetzeler joins the process in activity send package,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,Detlef Wetzeler
+21,object iPhone 8 joins the process in activity send package,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,iPhone 8
+22,object Kindle Paperwhite joins the process in activity send package,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,3.0,Kindle Paperwhite
+23,object type split in activity place order with object types ['items'],s,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,['items']
+24,object type split in activity confirm order with object types ['items' 'orders'],s,2,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,['items' 'orders']
+25,object Christopher Schwanen leaves the process in activity pick item,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,Christopher Schwanen
+26,object Detlef Wetzeler leaves the process in activity pick item,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,Detlef Wetzeler
+27,"object split in activity pick item with objects ['i-880027', 'Marco Pegoraro']",s,2,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,"['i-880027', 'Marco Pegoraro']"
+28,object Nina Graves leaves the process in activity pick item,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,Nina Graves
+29,object type orders leaves the process in activity pay order,tl,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,orders
+30,object Marco Pegoraro leaves the process in activity create package,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,Marco Pegoraro
+31,object Yisong Zhang leaves the process in activity send package,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,Yisong Zhang
+32,high lagging time of object typeitems for activity pick item,lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,items
+33,high lagging time of object typeitems for activity pick item,lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,items
+34,high lagging time of object typeitems for activity confirm order,lt,0 days 04:55:39,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,items
+35,object type join in activity confirm order with objects ['items'],j,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,['items']
+36,high lagging time of object typeitems for activity pick item,lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,items
+37,high lagging time of object typeitems for activity pick item,lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,items
+38,object Christopher Schwanen joins the process in activity pick item,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,Christopher Schwanen
+39,high lagging time of object typeitems for activity pick item,lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,items
+40,object Detlef Wetzeler joins the process in activity pick item,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,Detlef Wetzeler
+41,high lagging time of object typeitems for activity pick item,lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,items
+42,object Marco Pegoraro joins the process in activity pick item,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,Marco Pegoraro
+43,high lagging time of object typeitems for activity pick item,lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,items
+44,object Nina Graves joins the process in activity pick item,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,Nina Graves
+45,high lagging time of object typeitems for activity pay order,lt,6 days 01:22:14,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,items
+46,object type join in activity pay order with objects ['items'],j,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,['items']
+47,high lagging time of object ['Marco Pegoraro'] for activity create package,lt,5 days 04:40:07,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,['Marco Pegoraro']
+48,"object join in activity create package with objects ['Marco Pegoraro', 'Echo Show 5', 'Echo Studio', 'MacBook Air', 'iPad', 'iPad Pro', 'iPhone 11 Pro']",j,7,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,"['Marco Pegoraro', 'Echo Show 5', 'Echo Studio', 'MacBook Air', 'iPad', 'iPad Pro', 'iPhone 11 Pro']"
+49,"high lagging time of object ['Echo Show 5', 'Echo Studio', 'MacBook Air', 'iPad', 'iPad Pro', 'iPhone 11 Pro'] for activity send package",lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,"['Echo Show 5', 'Echo Studio', 'MacBook Air', 'iPad', 'iPad Pro', 'iPhone 11 Pro']"
+50,high lagging time of object typeitems for activity send package,lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,items
+51,object Majid Rafiei joins the process in activity send package,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,Majid Rafiei
+52,object Yisong Zhang joins the process in activity send package,oj,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,Yisong Zhang
+53,"high lagging time of object ['Echo Show 5', 'Echo Studio', 'MacBook Air', 'iPad', 'iPad Pro', 'iPhone 11 Pro'] for activity package delivered",lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,"['Echo Show 5', 'Echo Studio', 'MacBook Air', 'iPad', 'iPad Pro', 'iPhone 11 Pro']"
+54,high lagging time of object typeitems for activity package delivered,lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,items
+55,high lagging time of object ['Majid Rafiei'] for activity package delivered,lt,0 days 00:00:00,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,5.0,['Majid Rafiei']
+56,object type split in activity place order with object types ['items'],s,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,6.0,['items']
+57,object type split in activity confirm order with object types ['items'],s,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,6.0,['items']
+58,object Mahsa Bafrani leaves the process in activity pick item,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,6.0,Mahsa Bafrani
+59,object Benedikt Knopp leaves the process in activity reorder item,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,6.0,Benedikt Knopp
+60,object Christopher Schwanen leaves the process in activity pick item,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,6.0,Christopher Schwanen
+61,object type split in activity pay order with object types ['items'],s,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,6.0,['items']
+62,object Fire Stick 4K leaves the process in activity place order,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,6.0,Fire Stick 4K
+63,object iPhone 11 Pro leaves the process in activity place order,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,6.0,iPhone 11 Pro
+64,object type items leaves the process in activity place order,tl,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,6.0,items
+65,object iPad Air leaves the process in activity place order,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,6.0,iPad Air
+66,object iPhone 8 leaves the process in activity place order,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,6.0,iPhone 8
+67,object Riviera Robotics SAS leaves the process in activity place order,ol,1,2023-04-12 01:44:22.580,2023-04-12 12:01:10.809,21,6.0,Riviera Robotics SAS

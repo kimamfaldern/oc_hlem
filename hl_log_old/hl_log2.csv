@@ -1,0 +1,19 @@
+,event,event type,frequency,start time,end time,time segment,quasi case id,related object
+0,high demand of products: Kindle Paperwhite,hd,6,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,,Kindle Paperwhite
+1,high demand of employees: Leah Tacke genannt Unterberg,hd,3,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,,Leah Tacke genannt Unterberg
+2,high demand of customers: AlpenTech Innovations AG,hd,6,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,,AlpenTech Innovations AG
+3,high load of object type orders,hl,5,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,,orders
+4,high load of object type items,hl,25,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,,items
+5,high load of object type packages,hl,0,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,,packages
+6,high load (over all object types),hol,17,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,,
+7,object type split in activity place order with object types ['items' 'orders'],s,2,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,0.0,['items' 'orders']
+8,object type split in activity place order with object types ['items' 'orders'],s,2,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,0.0,['items' 'orders']
+9,object Leah Tacke genannt Unterberg leaves the process in activity pick item,ol,1,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,0.0,Leah Tacke genannt Unterberg
+10,object Nina Graves leaves the process in activity pick item,ol,1,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,0.0,Nina Graves
+11,object Echo leaves the process in activity confirm order,ol,1,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,0.0,Echo
+12,object iPhone 11 Pro leaves the process in activity confirm order,ol,1,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,0.0,iPhone 11 Pro
+13,object type items leaves the process in activity confirm order,tl,1,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,0.0,items
+14,object type orders leaves the process in activity confirm order,tl,1,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,0.0,orders
+15,object Mahsa Bafrani leaves the process in activity pick item,ol,1,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,0.0,Mahsa Bafrani
+16,high lagging time of object ['Wil van der Aalst'] for activity confirm order,lt,0 days 00:57:08,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,0.0,['Wil van der Aalst']
+17,"object join in activity confirm order with objects ['Wil van der Aalst', 'Echo Studio', 'Fire Stick', 'Kindle Paperwhite', 'iPad Air', 'MacBook Air']",j,6,2023-04-03 22:25:06.229,2023-04-04 08:41:54.458,2,0.0,"['Wil van der Aalst', 'Echo Studio', 'Fire Stick', 'Kindle Paperwhite', 'iPad Air', 'MacBook Air']"
