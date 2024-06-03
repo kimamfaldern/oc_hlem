@@ -1,0 +1,13 @@
+,event,event type,frequency,start time,end time,time segment,quasi case id,related object
+0,high demand of customers: Riviera Robotics SAS,hd,304,2024-05-24 19:59:40.927570035+00:00,2024-05-25 20:00:48.752336390+00:00,418,,Riviera Robotics SAS
+1,high demand of employees: Mahsa Bafrani,hd,1906,2024-05-24 19:59:40.927570035+00:00,2024-05-25 20:00:48.752336390+00:00,418,,Mahsa Bafrani
+2,high demand of products: iPhone X,hd,3007,2024-05-24 19:59:40.927570035+00:00,2024-05-25 20:00:48.752336390+00:00,418,,iPhone X
+3,high load (over all object types),hol,21003,2024-05-24 19:59:40.927570035+00:00,2024-05-25 20:00:48.752336390+00:00,418,,
+4,object Echo leaves the process in activity package delivered,ol,1,2024-05-24 19:59:40.927570035+00:00,2024-05-25 20:00:48.752336390+00:00,418,1915.0,Echo
+5,object iPad Pro leaves the process in activity package delivered,ol,1,2024-05-24 19:59:40.927570035+00:00,2024-05-25 20:00:48.752336390+00:00,418,1915.0,iPad Pro
+6,object MacBook Pro leaves the process in activity package delivered,ol,1,2024-05-24 19:59:40.927570035+00:00,2024-05-25 20:00:48.752336390+00:00,418,1915.0,MacBook Pro
+7,object Echo Plus leaves the process in activity pay order,ol,1,2024-05-24 19:59:40.927570035+00:00,2024-05-25 20:00:48.752336390+00:00,418,1915.0,Echo Plus
+8,high lagging time of object ['Mahsa Bafrani'] for activity create package,lt,47 days 15:53:05,2024-05-24 19:59:40.927570035+00:00,2024-05-25 20:00:48.752336390+00:00,418,1915.0,['Mahsa Bafrani']
+9,"object (type) join in activity create package with objects [['Mahsa Bafrani'], ['iPhone X']]",j,2,2024-05-24 19:59:40.927570035+00:00,2024-05-25 20:00:48.752336390+00:00,418,1915.0,"[['Mahsa Bafrani'], ['iPhone X']]"
+10,high lagging time of object ['Yisong Zhang'] for activity send package,lt,61 days 09:49:52,2024-05-24 19:59:40.927570035+00:00,2024-05-25 20:00:48.752336390+00:00,418,1915.0,['Yisong Zhang']
+11,"object (type) join in activity send package with objects [['Yisong Zhang'], ['Mahsa Bafrani'], ['iPhone X']]",j,3,2024-05-24 19:59:40.927570035+00:00,2024-05-25 20:00:48.752336390+00:00,418,1915.0,"[['Yisong Zhang'], ['Mahsa Bafrani'], ['iPhone X']]"

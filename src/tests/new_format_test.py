@@ -1,7 +1,18 @@
 import pandas as pd
 import pm4py
+import os
+import sys
+sys.path.append('../')
+from pm4py_core.pm4py.objects.ocel.importer.sqlite.variants import ocel20 as importer
 
-ocel = pm4py.read_ocel2_sqlite('order-management.sqlite')
+curr_path = os.getcwd()
+parent_path = os.path.dirname(curr_path)
+root_path = os.path.dirname(parent_path)
+dataset = './input_data/order-management2'
+path = root_path + dataset + '.sqlite'
+ocel = importer.apply(path)
+#ocel = pm4py.read_ocel2_sqlite(path)
+print(ocel)
 df = ocel.get_extended_table()
 print(df.dtypes)
 
