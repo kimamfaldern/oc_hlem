@@ -2316,8 +2316,8 @@ def construct_cascade():
         cascade_string = ''
         cascade_string2 = ''
 
-#main()
-pattern_detection_dict2()
+main()
+#pattern_detection_dict2()
 #case_construction()
 #construct_cascade()
 
