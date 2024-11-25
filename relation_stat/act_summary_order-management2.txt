@@ -1,0 +1,273 @@
+total number of different activity prop: 272
+(('enter', ('place order', 'pick item')), ('exit', ('pick item', 'confirm order'))) 27
+(('enter', ('confirm order', 'pay order')), ('exit', ('confirm order', 'pay order'))) 24
+(('exit', ('pick item', 'confirm order')), ('enter', ('pay order', 'create package'))) 2
+(('exit', ('pick item', 'confirm order')), ('exit', ('confirm order', 'pay order'))) 1
+(('hd', 'items'), ('hd', 'items')) 58
+(('enter', ('send package', 'package delivered')), ('exit', ('send package', 'package delivered'))) 89
+(('enter', ('place order', 'confirm order')), ('enter', ('confirm order', 'pick item'))) 7
+(('exit', ('create package', 'send package')), ('exit', ('send package', 'package delivered'))) 54
+(('hd', 'items'), ('exit', ('send package', 'package delivered'))) 3
+(('enter', ('confirm order', 'pick item')), ('exit', ('confirm order', 'pick item'))) 22
+(('enter', ('create package', 'send package')), ('enter', ('send package', 'package delivered'))) 71
+(('enter', ('create package', 'send package')), ('exit', ('create package', 'send package'))) 97
+(('enter', ('pick item', 'pay order')), ('enter', ('pay order', 'create package'))) 8
+(('enter', ('pick item', 'pay order')), ('exit', ('pick item', 'pay order'))) 6
+(('enter', ('send package', 'failed delivery')), ('exit', ('send package', 'failed delivery'))) 41
+(('enter', ('send package', 'failed delivery')), ('enter', ('failed delivery', 'package delivered'))) 32
+(('exit', ('create package', 'send package')), ('exit', ('send package', 'failed delivery'))) 12
+(('exit', ('create package', 'send package')), ('enter', ('failed delivery', 'package delivered'))) 14
+(('enter', ('create package', 'send package')), ('exit', ('send package', 'package delivered'))) 99
+(('enter', ('create package', 'send package')), ('enter', ('package delivered', 'payment reminder'))) 4
+(('enter', ('failed delivery', 'package delivered')), ('exit', ('failed delivery', 'package delivered'))) 44
+(('exit', ('place order', 'confirm order')), ('exit', ('confirm order', 'pick item'))) 1
+(('exit', ('pick item', 'create package')), ('exit', ('send package', 'package delivered'))) 53
+(('exit', ('pick item', 'create package')), ('enter', ('package delivered', 'payment reminder'))) 4
+(('exit', ('send package', 'failed delivery')), ('exit', ('failed delivery', 'package delivered'))) 42
+(('j', 'create package'), ('exit', ('send package', 'package delivered'))) 49
+(('j', 'create package'), ('enter', ('package delivered', 'payment reminder'))) 2
+(('syn', 'create package'), ('exit', ('send package', 'package delivered'))) 28
+(('syn', 'create package'), ('enter', ('package delivered', 'payment reminder'))) 1
+(('enter', ('pick item', 'confirm order')), ('exit', ('pick item', 'confirm order'))) 22
+(('enter', ('pick item', 'confirm order')), ('enter', ('confirm order', 'pay order'))) 1
+(('enter', ('place order', 'confirm order')), ('exit', ('place order', 'confirm order'))) 26
+(('exit', ('place order', 'pick item')), ('exit', ('pick item', 'confirm order'))) 19
+(('exit', ('place order', 'pick item')), ('enter', ('confirm order', 'pay order'))) 1
+(('s', 'place order'), ('j', 'confirm order')) 58
+(('j', 'create package'), ('enter', ('send package', 'package delivered'))) 31
+(('enter', ('create package', 'send package')), ('exit', ('failed delivery', 'package delivered'))) 10
+(('enter', ('send package', 'failed delivery')), ('exit', ('failed delivery', 'package delivered'))) 34
+(('enter', ('failed delivery', 'failed delivery')), ('exit', ('failed delivery', 'package delivered'))) 21
+(('exit', ('pay order', 'create package')), ('exit', ('failed delivery', 'package delivered'))) 1
+(('exit', ('create package', 'send package')), ('exit', ('failed delivery', 'package delivered'))) 13
+(('exit', ('failed delivery', 'failed delivery')), ('exit', ('failed delivery', 'package delivered'))) 18
+(('s', 'place order'), ('s', 'confirm order')) 28
+(('j', 'create package'), ('exit', ('failed delivery', 'package delivered'))) 4
+(('exit', ('pay order', 'create package')), ('exit', ('create package', 'send package'))) 1
+(('exit', ('pay order', 'create package')), ('enter', ('send package', 'package delivered'))) 1
+(('exit', ('pay order', 'create package')), ('exit', ('send package', 'package delivered'))) 3
+(('j', 'create package'), ('exit', ('create package', 'send package'))) 31
+(('hl', "['Fire Stick']"), ('hl', "['Fire Stick']")) 127
+(('enter', ('confirm order', 'pay order')), ('enter', ('pay order', 'pick item'))) 3
+(('enter', ('place order', 'confirm order')), ('exit', ('confirm order', 'pay order'))) 2
+(('enter', ('place order', 'confirm order')), ('enter', ('pay order', 'pick item'))) 1
+(('exit', ('place order', 'confirm order')), ('exit', ('confirm order', 'pay order'))) 1
+(('exit', ('place order', 'confirm order')), ('enter', ('pay order', 'pick item'))) 1
+(('exit', ('pick item', 'create package')), ('exit', ('create package', 'send package'))) 33
+(('exit', ('pick item', 'create package')), ('enter', ('send package', 'package delivered'))) 36
+(('syn', 'create package'), ('exit', ('create package', 'send package'))) 17
+(('syn', 'create package'), ('enter', ('send package', 'package delivered'))) 17
+(('enter', ('confirm order', 'item out of stock')), ('enter', ('item out of stock', 'reorder item'))) 3
+(('enter', ('confirm order', 'item out of stock')), ('exit', ('item out of stock', 'reorder item'))) 2
+(('hl', "['Echo Studio']"), ('hl', "['Echo Studio']")) 124
+(('hl', "['iPhone 8']"), ('hl', "['iPhone 8']")) 121
+(('enter', ('send package', 'failed delivery')), ('exit', ('failed delivery', 'pay order'))) 1
+(('enter', ('send package', 'failed delivery')), ('enter', ('pay order', 'failed delivery'))) 1
+(('enter', ('failed delivery', 'pay order')), ('exit', ('failed delivery', 'pay order'))) 1
+(('enter', ('failed delivery', 'pay order')), ('enter', ('pay order', 'failed delivery'))) 1
+(('exit', ('create package', 'send package')), ('exit', ('failed delivery', 'pay order'))) 1
+(('exit', ('create package', 'send package')), ('enter', ('pay order', 'failed delivery'))) 1
+(('exit', ('send package', 'failed delivery')), ('exit', ('failed delivery', 'pay order'))) 1
+(('exit', ('send package', 'failed delivery')), ('enter', ('pay order', 'failed delivery'))) 1
+(('hl', "['Detlef Wetzeler']"), ('hl', "['Detlef Wetzeler']")) 33
+(('hl', "['Kindle Paperwhite']"), ('hl', "['Kindle Paperwhite']")) 128
+(('hl', "['iPhone X']"), ('hl', "['iPhone X']")) 130
+(('hl', "['iPhone 11 Pro']"), ('hl', "['iPhone 11 Pro']")) 118
+(('hl', "['Kindle']"), ('hl', "['Kindle']")) 98
+(('hl', "['iPad Pro']"), ('hl', "['iPad Pro']")) 126
+(('enter', ('pay order', 'failed delivery')), ('enter', ('failed delivery', 'failed delivery'))) 1
+(('enter', ('pay order', 'failed delivery')), ('exit', ('failed delivery', 'failed delivery'))) 1
+(('enter', ('pay order', 'failed delivery')), ('exit', ('pay order', 'failed delivery'))) 1
+(('exit', ('failed delivery', 'pay order')), ('enter', ('failed delivery', 'failed delivery'))) 1
+(('exit', ('failed delivery', 'pay order')), ('exit', ('failed delivery', 'failed delivery'))) 1
+(('exit', ('failed delivery', 'pay order')), ('exit', ('pay order', 'failed delivery'))) 1
+(('j', 'create package'), ('s', 'package delivered')) 32
+(('syn', 'create package'), ('s', 'package delivered')) 22
+(('hl', "['Mahsa Bafrani']"), ('hl', "['Mahsa Bafrani']")) 49
+(('hl', "['Echo Plus']"), ('hl', "['Echo Plus']")) 122
+(('hl', "['Echo Show 8']"), ('hl', "['Echo Show 8']")) 105
+(('hl', "['Fire Stick 4K']"), ('hl', "['Fire Stick 4K']")) 133
+(('enter', ('failed delivery', 'package delivered')), ('enter', ('package delivered', 'pay order'))) 3
+(('enter', ('failed delivery', 'failed delivery')), ('exit', ('failed delivery', 'failed delivery'))) 18
+(('enter', ('failed delivery', 'failed delivery')), ('enter', ('failed delivery', 'package delivered'))) 15
+(('exit', ('send package', 'failed delivery')), ('enter', ('package delivered', 'pay order'))) 6
+(('exit', ('failed delivery', 'failed delivery')), ('exit', ('failed delivery', 'failed delivery'))) 6
+(('exit', ('failed delivery', 'failed delivery')), ('enter', ('failed delivery', 'package delivered'))) 4
+(('hl', "['iPad']"), ('hl', "['iPad']")) 105
+(('enter', ('pick item', 'create package')), ('exit', ('pick item', 'create package'))) 16
+(('exit', ('confirm order', 'item out of stock')), ('exit', ('item out of stock', 'reorder item'))) 1
+(('hl', "['Christopher Schwanen']"), ('hl', "['Christopher Schwanen']")) 31
+(('hl', "['Marco Pegoraro']"), ('hl', "['Marco Pegoraro']")) 41
+(('hl', "['Echo']"), ('hl', "['Echo']")) 107
+(('hl', "['MacBook Pro']"), ('hl', "['MacBook Pro']")) 104
+(('hl', "['MacBook Air']"), ('hl', "['MacBook Air']")) 103
+(('hl', "['iPad Air']"), ('hl', "['iPad Air']")) 125
+(('hl', "['Echo Dot']"), ('hl', "['Echo Dot']")) 114
+(('hl', "['Benedikt Knopp']"), ('hl', "['Benedikt Knopp']")) 48
+(('enter', ('send package', 'package delivered')), ('s', 'package delivered')) 2
+(('exit', ('create package', 'send package')), ('enter', ('package delivered', 'pay order'))) 6
+(('exit', ('create package', 'send package')), ('s', 'package delivered')) 6
+(('hl', "['iPhone 11']"), ('hl', "['iPhone 11']")) 96
+(('exit', ('confirm order', 'pick item')), ('exit', ('pick item', 'pay order'))) 2
+(('exit', ('confirm order', 'pick item')), ('enter', ('pay order', 'create package'))) 2
+(('enter', ('pay order', 'create package')), ('exit', ('pay order', 'create package'))) 10
+(('hl', "['Nina Graves']"), ('hl', "['Nina Graves']")) 38
+(('hl', "['iPad mini']"), ('hl', "['iPad mini']")) 107
+(('hl', "['Echo Show 5']"), ('hl', "['Echo Show 5']")) 107
+(('enter', ('item out of stock', 'reorder item')), ('exit', ('item out of stock', 'reorder item'))) 3
+(('enter', ('place order', 'pick item')), ('enter', ('confirm order', 'create package'))) 23
+(('enter', ('pick item', 'confirm order')), ('enter', ('confirm order', 'create package'))) 14
+(('exit', ('place order', 'pick item')), ('enter', ('confirm order', 'create package'))) 13
+(('enter', ('confirm order', 'create package')), ('exit', ('confirm order', 'create package'))) 17
+(('enter', ('send package', 'failed delivery')), ('s', 'package delivered')) 4
+(('enter', ('failed delivery', 'package delivered')), ('s', 'package delivered')) 3
+(('exit', ('pick item', 'confirm order')), ('exit', ('confirm order', 'create package'))) 15
+(('exit', ('pick item', 'create package')), ('exit', ('failed delivery', 'package delivered'))) 7
+(('exit', ('send package', 'failed delivery')), ('s', 'package delivered')) 5
+(('syn', 'create package'), ('exit', ('failed delivery', 'package delivered'))) 3
+(('hl', "['Leah Tacke genannt Unterberg']"), ('hl', "['Leah Tacke genannt Unterberg']")) 42
+(('enter', ('create package', 'send package')), ('enter', ('failed delivery', 'package delivered'))) 18
+(('enter', ('create package', 'send package')), ('exit', ('send package', 'failed delivery'))) 17
+(('enter', ('create package', 'send package')), ('enter', ('failed delivery', 'failed delivery'))) 5
+(('enter', ('create package', 'send package')), ('exit', ('failed delivery', 'failed delivery'))) 3
+(('exit', ('pick item', 'create package')), ('enter', ('failed delivery', 'package delivered'))) 10
+(('exit', ('confirm order', 'create package')), ('enter', ('failed delivery', 'package delivered'))) 1
+(('exit', ('confirm order', 'create package')), ('exit', ('send package', 'failed delivery'))) 2
+(('exit', ('confirm order', 'create package')), ('enter', ('failed delivery', 'failed delivery'))) 2
+(('exit', ('confirm order', 'create package')), ('exit', ('failed delivery', 'failed delivery'))) 2
+(('exit', ('confirm order', 'create package')), ('enter', ('package delivered', 'payment reminder'))) 2
+(('j', 'create package'), ('enter', ('failed delivery', 'package delivered'))) 8
+(('j', 'create package'), ('exit', ('send package', 'failed delivery'))) 6
+(('j', 'create package'), ('enter', ('failed delivery', 'failed delivery'))) 1
+(('j', 'create package'), ('exit', ('failed delivery', 'failed delivery'))) 1
+(('enter', ('payment reminder', 'pay order')), ('exit', ('payment reminder', 'pay order'))) 9
+(('exit', ('package delivered', 'payment reminder')), ('exit', ('payment reminder', 'pay order'))) 5
+(('enter', ('pick item', 'confirm order')), ('exit', ('confirm order', 'create package'))) 6
+(('enter', ('create package', 'send package')), ('s', 'package delivered')) 9
+(('exit', ('place order', 'pick item')), ('exit', ('confirm order', 'create package'))) 5
+(('exit', ('pick item', 'create package')), ('s', 'package delivered')) 3
+(('syn', 'create package'), ('enter', ('failed delivery', 'package delivered'))) 5
+(('enter', ('send package', 'failed delivery')), ('enter', ('package delivered', 'pay order'))) 4
+(('j', 'payment reminder'), ('exit', ('payment reminder', 'pay order'))) 3
+(('j', 'confirm order'), ('s', 'pay order')) 5
+(('j', 'confirm order'), ('j', 'pay order')) 2
+(('syn', 'payment reminder'), ('exit', ('payment reminder', 'pay order'))) 2
+(('enter', ('send package', 'failed delivery')), ('enter', ('failed delivery', 'failed delivery'))) 11
+(('exit', ('send package', 'failed delivery')), ('exit', ('failed delivery', 'failed delivery'))) 14
+(('exit', ('send package', 'failed delivery')), ('enter', ('failed delivery', 'package delivered'))) 12
+(('exit', ('pick item', 'confirm order')), ('exit', ('pay order', 'create package'))) 1
+(('enter', ('send package', 'failed delivery')), ('exit', ('failed delivery', 'failed delivery'))) 14
+(('enter', ('place order', 'pick item')), ('exit', ('place order', 'pick item'))) 19
+(('enter', ('place order', 'pick item')), ('enter', ('pick item', 'confirm order'))) 8
+(('exit', ('create package', 'send package')), ('exit', ('failed delivery', 'failed delivery'))) 4
+(('exit', ('create package', 'send package')), ('enter', ('failed delivery', 'failed delivery'))) 2
+(('enter', ('send package', 'package delivered')), ('enter', ('package delivered', 'pay order'))) 6
+(('exit', ('pick item', 'create package')), ('exit', ('send package', 'failed delivery'))) 10
+(('exit', ('pick item', 'create package')), ('enter', ('send package', 'failed delivery'))) 6
+(('syn', 'create package'), ('exit', ('send package', 'failed delivery'))) 6
+(('syn', 'create package'), ('enter', ('send package', 'failed delivery'))) 3
+(('enter', ('create package', 'send package')), ('enter', ('package delivered', 'pay order'))) 14
+(('exit', ('pick item', 'create package')), ('enter', ('package delivered', 'pay order'))) 11
+(('j', 'create package'), ('s', 'pay order')) 1
+(('enter', ('failed delivery', 'package delivered')), ('enter', ('package delivered', 'payment reminder'))) 4
+(('exit', ('failed delivery', 'failed delivery')), ('enter', ('package delivered', 'payment reminder'))) 3
+(('exit', ('confirm order', 'create package')), ('enter', ('package delivered', 'pay order'))) 4
+(('exit', ('send package', 'failed delivery')), ('enter', ('package delivered', 'payment reminder'))) 1
+(('enter', ('failed delivery', 'failed delivery')), ('enter', ('package delivered', 'pay order'))) 5
+(('exit', ('failed delivery', 'failed delivery')), ('enter', ('package delivered', 'pay order'))) 2
+(('enter', ('confirm order', 'create package')), ('enter', ('send package', 'failed delivery'))) 1
+(('exit', ('pick item', 'confirm order')), ('enter', ('send package', 'failed delivery'))) 1
+(('enter', ('pay order', 'create package')), ('enter', ('create package', 'send package'))) 1
+(('enter', ('place order', 'confirm order')), ('s', 'confirm order')) 1
+(('j', 'pay order'), ('exit', ('pay order', 'create package'))) 1
+(('s', 'confirm order'), ('s', 'pay order')) 3
+(('s', 'confirm order'), ('j', 'pay order')) 3
+(('syn', 'confirm order'), ('s', 'pay order')) 1
+(('enter', ('create package', 'send package')), ('enter', ('send package', 'failed delivery'))) 5
+(('s', 'place order'), ('exit', ('place order', 'pick item'))) 1
+(('exit', ('place order', 'pick item')), ('exit', ('confirm order', 'send package'))) 1
+(('exit', ('place order', 'pick item')), ('exit', ('create package', 'confirm order'))) 1
+(('exit', ('place order', 'pick item')), ('enter', ('create package', 'confirm order'))) 2
+(('exit', ('place order', 'pick item')), ('enter', ('confirm order', 'send package'))) 1
+(('enter', ('create package', 'confirm order')), ('enter', ('package delivered', 'pay order'))) 1
+(('enter', ('create package', 'confirm order')), ('exit', ('send package', 'package delivered'))) 1
+(('enter', ('confirm order', 'send package')), ('enter', ('package delivered', 'pay order'))) 1
+(('enter', ('confirm order', 'send package')), ('exit', ('send package', 'package delivered'))) 1
+(('exit', ('create package', 'confirm order')), ('enter', ('package delivered', 'pay order'))) 1
+(('exit', ('create package', 'confirm order')), ('exit', ('send package', 'package delivered'))) 1
+(('exit', ('confirm order', 'send package')), ('enter', ('package delivered', 'pay order'))) 1
+(('exit', ('confirm order', 'send package')), ('exit', ('send package', 'package delivered'))) 1
+(('syn', 'create package'), ('enter', ('package delivered', 'pay order'))) 3
+(('j', 'create package'), ('enter', ('send package', 'failed delivery'))) 1
+(('enter', ('place order', 'pick item')), ('exit', ('confirm order', 'create package'))) 2
+(('exit', ('pick item', 'pay order')), ('exit', ('pay order', 'create package'))) 4
+(('enter', ('confirm order', 'create package')), ('enter', ('package delivered', 'payment reminder'))) 1
+(('exit', ('pick item', 'confirm order')), ('enter', ('package delivered', 'payment reminder'))) 1
+(('exit', ('confirm order', 'pick item')), ('exit', ('pick item', 'create package'))) 1
+(('enter', ('send package', 'failed delivery')), ('enter', ('package delivered', 'payment reminder'))) 1
+(('enter', ('failed delivery', 'failed delivery')), ('enter', ('package delivered', 'payment reminder'))) 1
+(('j', 'create package'), ('enter', ('package delivered', 'pay order'))) 2
+(('enter', ('package delivered', 'pay order')), ('exit', ('package delivered', 'pay order'))) 4
+(('enter', ('confirm order', 'pick item')), ('enter', ('pick item', 'pay order'))) 1
+(('enter', ('create package', 'send package')), ('enter', ('pay order', 'package delivered'))) 1
+(('enter', ('create package', 'send package')), ('exit', ('pay order', 'package delivered'))) 2
+(('exit', ('pick item', 'create package')), ('exit', ('send package', 'pay order'))) 1
+(('exit', ('pick item', 'create package')), ('enter', ('pay order', 'package delivered'))) 1
+(('exit', ('pick item', 'create package')), ('exit', ('pay order', 'package delivered'))) 1
+(('exit', ('pick item', 'create package')), ('enter', ('send package', 'pay order'))) 1
+(('exit', ('pick item', 'create package')), ('enter', ('failed delivery', 'failed delivery'))) 4
+(('syn', 'confirm order'), ('j', 'pay order')) 1
+(('exit', ('payment reminder', 'payment reminder')), ('exit', ('payment reminder', 'pay order'))) 1
+(('enter', ('confirm order', 'pay order')), ('s', 'pay order')) 3
+(('enter', ('create package', 'pay order')), ('exit', ('pay order', 'send package'))) 3
+(('exit', ('pay order', 'send package')), ('exit', ('send package', 'package delivered'))) 1
+(('enter', ('failed delivery', 'failed delivery')), ('s', 'package delivered')) 1
+(('exit', ('failed delivery', 'failed delivery')), ('s', 'package delivered')) 1
+(('enter', ('create package', 'send package')), ('hd', 'items')) 2
+(('enter', ('pay order', 'pick item')), ('exit', ('pay order', 'pick item'))) 4
+(('exit', ('confirm order', 'create package')), ('exit', ('create package', 'send package'))) 1
+(('exit', ('confirm order', 'create package')), ('enter', ('send package', 'package delivered'))) 1
+(('enter', ('place order', 'confirm order')), ('s', 'pay order')) 1
+(('exit', ('place order', 'confirm order')), ('s', 'pay order')) 2
+(('s', 'place order'), ('s', 'pay order')) 1
+(('exit', ('confirm order', 'create package')), ('exit', ('send package', 'package delivered'))) 1
+(('enter', ('create package', 'pay order')), ('enter', ('send package', 'package delivered'))) 1
+(('enter', ('pay order', 'send package')), ('enter', ('send package', 'package delivered'))) 1
+(('enter', ('pay order', 'send package')), ('exit', ('pay order', 'send package'))) 1
+(('exit', ('create package', 'pay order')), ('enter', ('send package', 'package delivered'))) 1
+(('exit', ('create package', 'pay order')), ('exit', ('pay order', 'send package'))) 1
+(('hl', "['Alessandro Berti']"), ('hl', "['Alessandro Berti']")) 1
+(('enter', ('pay order', 'package delivered')), ('exit', ('pay order', 'package delivered'))) 1
+(('s', 'send package'), ('j', 'package delivered')) 1
+(('enter', ('send package', 'failed delivery')), ('hd', 'items')) 1
+(('enter', ('failed delivery', 'package delivered')), ('hd', 'items')) 1
+(('exit', ('create package', 'send package')), ('hd', 'items')) 2
+(('exit', ('send package', 'failed delivery')), ('hd', 'items')) 1
+(('enter', ('pay order', 'create package')), ('enter', ('send package', 'package delivered'))) 1
+(('enter', ('send package', 'pay order')), ('enter', ('failed delivery', 'failed delivery'))) 1
+(('enter', ('send package', 'pay order')), ('exit', ('pay order', 'failed delivery'))) 1
+(('exit', ('pick item', 'create package')), ('exit', ('pay order', 'failed delivery'))) 1
+(('exit', ('pick item', 'pay order')), ('enter', ('send package', 'package delivered'))) 1
+(('enter', ('place order', 'pick item')), ('enter', ('create package', 'confirm order'))) 1
+(('exit', ('pay order', 'failed delivery')), ('exit', ('failed delivery', 'package delivered'))) 1
+(('exit', ('pay order', 'failed delivery')), ('exit', ('failed delivery', 'failed delivery'))) 1
+(('enter', ('create package', 'confirm order')), ('exit', ('confirm order', 'send package'))) 1
+(('enter', ('create package', 'confirm order')), ('exit', ('send package', 'failed delivery'))) 1
+(('exit', ('pick item', 'create package')), ('exit', ('confirm order', 'send package'))) 1
+(('enter', ('item out of stock', 'reorder item')), ('enter', ('reorder item', 'pick item'))) 1
+(('enter', ('create package', 'pay order')), ('enter', ('send package', 'failed delivery'))) 1
+(('exit', ('pay order', 'send package')), ('exit', ('send package', 'failed delivery'))) 1
+(('exit', ('pay order', 'send package')), ('enter', ('failed delivery', 'package delivered'))) 1
+(('exit', ('pay order', 'send package')), ('exit', ('failed delivery', 'package delivered'))) 1
+(('enter', ('failed delivery', 'failed delivery')), ('enter', ('failed delivery', 'failed delivery'))) 2
+(('exit', ('send package', 'failed delivery')), ('enter', ('failed delivery', 'failed delivery'))) 2
+(('exit', ('failed delivery', 'failed delivery')), ('enter', ('failed delivery', 'failed delivery'))) 1
+(('enter', ('send package', 'pay order')), ('exit', ('send package', 'pay order'))) 1
+(('enter', ('send package', 'pay order')), ('enter', ('pay order', 'package delivered'))) 1
+(('enter', ('send package', 'pay order')), ('exit', ('pay order', 'package delivered'))) 1
+(('enter', ('create package', 'pay order')), ('exit', ('create package', 'pay order'))) 1
+(('enter', ('create package', 'pay order')), ('enter', ('pay order', 'send package'))) 1
+(('exit', ('pay order', 'create package')), ('exit', ('failed delivery', 'failed delivery'))) 1
+(('exit', ('pay order', 'create package')), ('enter', ('failed delivery', 'package delivered'))) 1
+(('enter', ('send package', 'package delivered')), ('enter', ('package delivered', 'payment reminder'))) 1
+(('enter', ('send package', 'package delivered')), ('hd', 'items')) 1

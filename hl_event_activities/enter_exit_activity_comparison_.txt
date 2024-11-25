@@ -1,0 +1,63 @@
+('Create Goods Receipt', 'Create Invoice Receipt'):
+enter: 306
+exit: 308
+('Create Invoice Receipt', 'Perform Two-Way Match'):
+enter: 455
+exit: 444
+('Perform Two-Way Match', 'Create Goods Receipt'):
+enter: 39
+exit: 26
+('Create Goods Receipt', 'Execute Payment'):
+enter: 355
+exit: 301
+('Create Goods Receipt', 'Create Goods Receipt'):
+enter: 459
+exit: 473
+('Perform Two-Way Match', 'Execute Payment'):
+enter: 368
+exit: 409
+('Execute Payment', 'Execute Payment'):
+enter: 209
+exit: 204
+('Execute Payment', 'Create Goods Receipt'):
+enter: 57
+exit: 37
+('Create Invoice Receipt', 'Create Goods Receipt'):
+enter: 3
+exit: 4
+('Create Goods Receipt', 'Perform Two-Way Match'):
+enter: 4
+exit: 6
+('Perform Two-Way Match', 'Create Invoice Receipt'):
+enter: 77
+exit: 70
+('Create Invoice Receipt', 'Create Invoice Receipt'):
+enter: 18
+exit: 15
+('Perform Two-Way Match', 'Perform Two-Way Match'):
+enter: 23
+exit: 23
+('Create Purchase Requisition', 'Approve Purchase Requisition'):
+enter: 333
+exit: 361
+('Create Purchase Requisition', 'Delegate Purchase Requisition Approval'):
+enter: 90
+exit: 89
+('Create Purchase Order', 'Approve Purchase Order'):
+enter: 410
+exit: 417
+('Approve Purchase Order', 'Create Goods Receipt'):
+enter: 238
+exit: 237
+('Approve Purchase Requisition', 'Create Request for Quotation'):
+enter: 26
+exit: 31
+('Create Request for Quotation', 'Create Purchase Order'):
+enter: 77
+exit: 90
+('Create Purchase Order', 'Create Purchase Order'):
+enter: 45
+exit: 49
+('Approve Purchase Order', 'Approve Purchase Order'):
+enter: 42
+exit: 27

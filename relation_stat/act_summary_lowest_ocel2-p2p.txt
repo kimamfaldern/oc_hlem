@@ -1,0 +1,359 @@
+(('enter', ('Create Purchase Requisition', 'Delegate Purchase Requisition Approval')), ('exit', ('Create Purchase Requisition', 'Delegate Purchase Requisition Approval'))) 12
+(('hd', 'material'), ('exit', ('Create Purchase Requisition', 'Approve Purchase Requisition'))) 21
+(('exit', ('Execute Payment', 'Execute Payment')), ('exit', ('Execute Payment', 'Execute Payment'))) 6
+(('enter', ('Perform Two-Way Match', 'Execute Payment')), ('enter', ('Execute Payment', 'Execute Payment'))) 6
+(('enter', ('Create Purchase Order', 'Approve Purchase Order')), ('j', 'Approve Purchase Order')) 19
+(('exit', ('Create Purchase Order', 'Approve Purchase Order')), ('exit', ('Approve Purchase Order', 'Create Goods Receipt'))) 9
+(('enter', ('Create Purchase Order', 'Approve Purchase Order')), ('enter', ('Approve Purchase Order', 'Create Goods Receipt'))) 12
+(('enter', ('Create Goods Receipt', 'Execute Payment')), ('exit', ('Create Goods Receipt', 'Execute Payment'))) 18
+(('enter', ('Create Goods Receipt', 'Create Goods Receipt')), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 9
+(('s', 'Create Invoice Receipt'), ('exit', ('Perform Two-Way Match', 'Execute Payment'))) 15
+(('syn', 'Create Goods Receipt'), ('exit', ('Create Goods Receipt', 'Execute Payment'))) 8
+(('syn', 'Create Invoice Receipt'), ('exit', ('Perform Two-Way Match', 'Execute Payment'))) 13
+(('hd', 'purchase_order'), ('hd', 'purchase_order')) 7
+(('exit', ('Approve Purchase Order', 'Create Goods Receipt')), ('exit', ('Create Goods Receipt', 'Create Goods Receipt'))) 15
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('exit', ('Perform Two-Way Match', 'Create Goods Receipt'))) 1
+(('enter', ('Perform Two-Way Match', 'Create Goods Receipt')), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 3
+(('enter', ('Perform Two-Way Match', 'Create Goods Receipt')), ('exit', ('Perform Two-Way Match', 'Create Goods Receipt'))) 7
+(('enter', ('Perform Two-Way Match', 'Create Goods Receipt')), ('j', 'Create Goods Receipt')) 2
+(('enter', ('Perform Two-Way Match', 'Create Goods Receipt')), ('syn', 'Create Goods Receipt')) 1
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('exit', ('Perform Two-Way Match', 'Create Goods Receipt'))) 2
+(('exit', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('exit', ('Perform Two-Way Match', 'Create Goods Receipt'))) 1
+(('s', 'Create Invoice Receipt'), ('exit', ('Perform Two-Way Match', 'Create Goods Receipt'))) 2
+(('s', 'Perform Two-Way Match'), ('exit', ('Perform Two-Way Match', 'Create Goods Receipt'))) 1
+(('j', 'Create Invoice Receipt'), ('exit', ('Perform Two-Way Match', 'Create Goods Receipt'))) 1
+(('j', 'Perform Two-Way Match'), ('exit', ('Perform Two-Way Match', 'Create Goods Receipt'))) 2
+(('syn', 'Create Invoice Receipt'), ('exit', ('Perform Two-Way Match', 'Create Goods Receipt'))) 2
+(('s', 'Approve Purchase Order'), ('exit', ('Approve Purchase Order', 'Approve Purchase Order'))) 2
+(('j', 'Approve Purchase Order'), ('exit', ('Approve Purchase Order', 'Approve Purchase Order'))) 1
+(('hd', 'quotation'), ('hd', 'quotation')) 19
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('j', 'Create Invoice Receipt')) 1
+(('s', 'Create Goods Receipt'), ('j', 'Create Invoice Receipt')) 2
+(('enter', ('Create Goods Receipt', 'Create Invoice Receipt')), ('s', 'Perform Two-Way Match')) 18
+(('enter', ('Create Goods Receipt', 'Create Goods Receipt')), ('enter', ('Create Goods Receipt', 'Create Goods Receipt'))) 20
+(('enter', ('Perform Two-Way Match', 'Execute Payment')), ('j', 'Execute Payment')) 11
+(('enter', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('hd', 'invoice_receipt')) 5
+(('enter', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('j', 'Create Invoice Receipt')) 9
+(('exit', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('hd', 'invoice_receipt')) 6
+(('exit', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('exit', ('Perform Two-Way Match', 'Create Invoice Receipt'))) 9
+(('s', 'Create Goods Receipt'), ('s', 'Create Goods Receipt')) 22
+(('s', 'Create Goods Receipt'), ('enter', ('Create Goods Receipt', 'Create Goods Receipt'))) 10
+(('s', 'Perform Two-Way Match'), ('hd', 'invoice_receipt')) 1
+(('enter', ('Create Purchase Requisition', 'Approve Purchase Requisition')), ('hd', 'material')) 12
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('exit', ('Create Goods Receipt', 'Create Goods Receipt'))) 9
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('s', 'Create Goods Receipt')) 2
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('j', 'Create Goods Receipt')) 12
+(('j', 'Create Goods Receipt'), ('exit', ('Create Goods Receipt', 'Create Goods Receipt'))) 8
+(('j', 'Create Goods Receipt'), ('s', 'Create Goods Receipt')) 4
+(('j', 'Create Goods Receipt'), ('j', 'Create Goods Receipt')) 11
+(('hd', 'material'), ('hd', 'material')) 7
+(('syn', 'Create Goods Receipt'), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 2
+(('syn', 'Create Goods Receipt'), ('exit', ('Create Goods Receipt', 'Create Goods Receipt'))) 5
+(('syn', 'Create Goods Receipt'), ('s', 'Create Goods Receipt')) 2
+(('syn', 'Create Goods Receipt'), ('j', 'Create Goods Receipt')) 7
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('j', 'Perform Two-Way Match')) 18
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('enter', ('Execute Payment', 'Execute Payment'))) 4
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('j', 'Execute Payment')) 7
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('hd', 'goods_receipt')) 21
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('exit', ('Perform Two-Way Match', 'Execute Payment'))) 16
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('j', 'Execute Payment')) 2
+(('exit', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('enter', ('Execute Payment', 'Execute Payment'))) 4
+(('exit', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('j', 'Execute Payment')) 11
+(('s', 'Perform Two-Way Match'), ('exit', ('Perform Two-Way Match', 'Execute Payment'))) 18
+(('s', 'Perform Two-Way Match'), ('j', 'Execute Payment')) 6
+(('s', 'Create Goods Receipt'), ('s', 'Create Invoice Receipt')) 3
+(('s', 'Create Goods Receipt'), ('j', 'Perform Two-Way Match')) 3
+(('j', 'Create Invoice Receipt'), ('j', 'Execute Payment')) 7
+(('hd', 'goods_receipt'), ('exit', ('Perform Two-Way Match', 'Execute Payment'))) 6
+(('enter', ('Create Request for Quotation', 'Create Purchase Order')), ('hd', 'quotation')) 10
+(('enter', ('Create Request for Quotation', 'Create Purchase Order')), ('s', 'Create Purchase Order')) 2
+(('enter', ('Create Request for Quotation', 'Create Purchase Order')), ('exit', ('Create Request for Quotation', 'Create Purchase Order'))) 17
+(('exit', ('Approve Purchase Order', 'Create Goods Receipt')), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 5
+(('enter', ('Create Request for Quotation', 'Create Purchase Order')), ('enter', ('Create Purchase Order', 'Approve Purchase Order'))) 4
+(('enter', ('Create Goods Receipt', 'Create Invoice Receipt')), ('hd', 'goods_receipt')) 12
+(('exit', ('Approve Purchase Order', 'Create Goods Receipt')), ('enter', ('Create Goods Receipt', 'Create Goods Receipt'))) 7
+(('enter', ('Create Goods Receipt', 'Create Invoice Receipt')), ('exit', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 22
+(('hd', 'goods_receipt'), ('exit', ('Create Goods Receipt', 'Create Invoice Receipt'))) 7
+(('syn', 'Create Goods Receipt'), ('j', 'Execute Payment')) 4
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('s', 'Execute Payment')) 2
+(('enter', ('Perform Two-Way Match', 'Execute Payment')), ('s', 'Execute Payment')) 2
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('s', 'Execute Payment')) 2
+(('exit', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('s', 'Execute Payment')) 3
+(('s', 'Create Invoice Receipt'), ('s', 'Execute Payment')) 3
+(('s', 'Perform Two-Way Match'), ('s', 'Execute Payment')) 4
+(('j', 'Create Invoice Receipt'), ('s', 'Execute Payment')) 4
+(('j', 'Perform Two-Way Match'), ('s', 'Execute Payment')) 4
+(('enter', ('Create Request for Quotation', 'Create Purchase Order')), ('exit', ('Create Purchase Order', 'Create Purchase Order'))) 3
+(('enter', ('Create Purchase Order', 'Create Purchase Order')), ('enter', ('Approve Purchase Order', 'Approve Purchase Order'))) 7
+(('enter', ('Create Purchase Order', 'Create Purchase Order')), ('exit', ('Approve Purchase Order', 'Approve Purchase Order'))) 1
+(('exit', ('Create Purchase Order', 'Create Purchase Order')), ('enter', ('Approve Purchase Order', 'Approve Purchase Order'))) 9
+(('exit', ('Create Purchase Order', 'Create Purchase Order')), ('exit', ('Approve Purchase Order', 'Approve Purchase Order'))) 2
+(('hd', 'quotation'), ('enter', ('Approve Purchase Order', 'Approve Purchase Order'))) 2
+(('hd', 'quotation'), ('exit', ('Approve Purchase Order', 'Approve Purchase Order'))) 1
+(('exit', ('Approve Purchase Order', 'Create Goods Receipt')), ('hd', 'purchase_order')) 2
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('exit', ('Perform Two-Way Match', 'Create Invoice Receipt'))) 5
+(('enter', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('enter', ('Create Invoice Receipt', 'Create Invoice Receipt'))) 2
+(('exit', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('exit', ('Perform Two-Way Match', 'Create Invoice Receipt'))) 6
+(('s', 'Perform Two-Way Match'), ('exit', ('Perform Two-Way Match', 'Create Invoice Receipt'))) 8
+(('enter', ('Create Invoice Receipt', 'Create Goods Receipt')), ('enter', ('Create Goods Receipt', 'Perform Two-Way Match'))) 1
+(('enter', ('Create Invoice Receipt', 'Create Goods Receipt')), ('exit', ('Create Invoice Receipt', 'Create Goods Receipt'))) 1
+(('enter', ('Create Goods Receipt', 'Perform Two-Way Match')), ('exit', ('Create Goods Receipt', 'Perform Two-Way Match'))) 2
+(('enter', ('Create Goods Receipt', 'Perform Two-Way Match')), ('exit', ('Perform Two-Way Match', 'Execute Payment'))) 1
+(('exit', ('Create Invoice Receipt', 'Create Goods Receipt')), ('exit', ('Create Goods Receipt', 'Perform Two-Way Match'))) 2
+(('exit', ('Create Invoice Receipt', 'Create Goods Receipt')), ('exit', ('Perform Two-Way Match', 'Execute Payment'))) 2
+(('enter', ('Create Goods Receipt', 'Create Goods Receipt')), ('enter', ('Create Goods Receipt', 'Create Invoice Receipt'))) 7
+(('exit', ('Create Purchase Order', 'Create Purchase Order')), ('s', 'Approve Purchase Order')) 5
+(('enter', ('Create Goods Receipt', 'Create Invoice Receipt')), ('j', 'Perform Two-Way Match')) 8
+(('enter', ('Create Goods Receipt', 'Create Invoice Receipt')), ('s', 'Create Invoice Receipt')) 12
+(('enter', ('Create Goods Receipt', 'Create Invoice Receipt')), ('j', 'Create Invoice Receipt')) 13
+(('enter', ('Approve Purchase Order', 'Create Goods Receipt')), ('exit', ('Approve Purchase Order', 'Create Goods Receipt'))) 15
+(('syn', 'Create Goods Receipt'), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 1
+(('enter', ('Execute Payment', 'Execute Payment')), ('enter', ('Execute Payment', 'Execute Payment'))) 6
+(('exit', ('Create Purchase Order', 'Approve Purchase Order')), ('exit', ('Create Goods Receipt', 'Create Goods Receipt'))) 1
+(('s', 'Create Goods Receipt'), ('enter', ('Create Goods Receipt', 'Create Invoice Receipt'))) 1
+(('enter', ('Create Goods Receipt', 'Create Invoice Receipt')), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 12
+(('enter', ('Create Goods Receipt', 'Create Invoice Receipt')), ('syn', 'Create Invoice Receipt')) 1
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('exit', ('Create Goods Receipt', 'Create Invoice Receipt'))) 4
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('enter', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 1
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('exit', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 1
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 1
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('s', 'Perform Two-Way Match')) 2
+(('s', 'Create Goods Receipt'), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 1
+(('s', 'Create Goods Receipt'), ('exit', ('Create Goods Receipt', 'Create Invoice Receipt'))) 13
+(('s', 'Create Goods Receipt'), ('enter', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 3
+(('s', 'Create Goods Receipt'), ('s', 'Perform Two-Way Match')) 4
+(('j', 'Create Goods Receipt'), ('exit', ('Create Goods Receipt', 'Create Invoice Receipt'))) 6
+(('j', 'Create Goods Receipt'), ('enter', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 1
+(('j', 'Create Goods Receipt'), ('exit', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 1
+(('j', 'Create Goods Receipt'), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 1
+(('j', 'Create Goods Receipt'), ('s', 'Perform Two-Way Match')) 3
+(('j', 'Create Goods Receipt'), ('j', 'Create Invoice Receipt')) 1
+(('j', 'Create Goods Receipt'), ('syn', 'Create Invoice Receipt')) 1
+(('syn', 'Create Goods Receipt'), ('exit', ('Create Goods Receipt', 'Create Invoice Receipt'))) 2
+(('enter', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 4
+(('enter', ('Approve Purchase Order', 'Create Goods Receipt')), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 2
+(('enter', ('Create Request for Quotation', 'Create Purchase Order')), ('enter', ('Create Purchase Order', 'Create Purchase Order'))) 7
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('enter', ('Create Goods Receipt', 'Create Goods Receipt'))) 1
+(('j', 'Perform Two-Way Match'), ('j', 'Execute Payment')) 11
+(('hd', 'invoice_receipt'), ('hd', 'invoice_receipt')) 12
+(('s', 'Create Invoice Receipt'), ('exit', ('Create Invoice Receipt', 'Create Goods Receipt'))) 1
+(('s', 'Create Invoice Receipt'), ('enter', ('Create Goods Receipt', 'Perform Two-Way Match'))) 2
+(('j', 'Create Invoice Receipt'), ('exit', ('Create Invoice Receipt', 'Create Goods Receipt'))) 1
+(('j', 'Create Invoice Receipt'), ('enter', ('Create Goods Receipt', 'Perform Two-Way Match'))) 1
+(('exit', ('Execute Payment', 'Create Goods Receipt')), ('exit', ('Create Goods Receipt', 'Create Goods Receipt'))) 1
+(('s', 'Create Goods Receipt'), ('hd', 'goods_receipt')) 3
+(('s', 'Create Goods Receipt'), ('exit', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 2
+(('hd', 'goods_receipt'), ('enter', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 1
+(('hd', 'goods_receipt'), ('exit', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 6
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('hd', 'goods_receipt')) 1
+(('j', 'Create Goods Receipt'), ('hd', 'goods_receipt')) 2
+(('enter', ('Create Goods Receipt', 'Execute Payment')), ('j', 'Execute Payment')) 2
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('j', 'Execute Payment')) 2
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('exit', ('Create Goods Receipt', 'Execute Payment'))) 8
+(('j', 'Create Goods Receipt'), ('j', 'Execute Payment')) 6
+(('j', 'Create Goods Receipt'), ('exit', ('Create Goods Receipt', 'Execute Payment'))) 13
+(('syn', 'Perform Two-Way Match'), ('j', 'Execute Payment')) 2
+(('syn', 'Perform Two-Way Match'), ('exit', ('Perform Two-Way Match', 'Execute Payment'))) 4
+(('s', 'Create Goods Receipt'), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 3
+(('exit', ('Execute Payment', 'Execute Payment')), ('enter', ('Execute Payment', 'Execute Payment'))) 1
+(('exit', ('Perform Two-Way Match', 'Execute Payment')), ('exit', ('Execute Payment', 'Execute Payment'))) 9
+(('j', 'Execute Payment'), ('exit', ('Execute Payment', 'Execute Payment'))) 12
+(('s', 'Create Purchase Order'), ('exit', ('Create Purchase Order', 'Create Purchase Order'))) 5
+(('exit', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 1
+(('j', 'Create Invoice Receipt'), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 18
+(('j', 'Create Invoice Receipt'), ('s', 'Perform Two-Way Match')) 19
+(('s', 'Create Purchase Order'), ('enter', ('Approve Purchase Order', 'Create Goods Receipt'))) 3
+(('enter', ('Perform Two-Way Match', 'Execute Payment')), ('syn', 'Execute Payment')) 4
+(('exit', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('syn', 'Execute Payment')) 4
+(('syn', 'Execute Payment'), ('exit', ('Execute Payment', 'Execute Payment'))) 6
+(('s', 'Create Invoice Receipt'), ('j', 'Execute Payment')) 3
+(('s', 'Create Goods Receipt'), ('s', 'Execute Payment')) 2
+(('s', 'Create Goods Receipt'), ('enter', ('Execute Payment', 'Create Goods Receipt'))) 1
+(('s', 'Create Goods Receipt'), ('j', 'Execute Payment')) 3
+(('s', 'Create Goods Receipt'), ('exit', ('Create Goods Receipt', 'Execute Payment'))) 2
+(('j', 'Create Goods Receipt'), ('s', 'Execute Payment')) 2
+(('j', 'Create Goods Receipt'), ('enter', ('Execute Payment', 'Create Goods Receipt'))) 3
+(('syn', 'Create Goods Receipt'), ('s', 'Execute Payment')) 1
+(('syn', 'Create Goods Receipt'), ('exit', ('Perform Two-Way Match', 'Execute Payment'))) 1
+(('enter', ('Execute Payment', 'Create Goods Receipt')), ('exit', ('Execute Payment', 'Create Goods Receipt'))) 7
+(('s', 'Create Invoice Receipt'), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 17
+(('s', 'Create Invoice Receipt'), ('exit', ('Create Invoice Receipt', 'Create Invoice Receipt'))) 2
+(('s', 'Create Invoice Receipt'), ('enter', ('Perform Two-Way Match', 'Perform Two-Way Match'))) 5
+(('s', 'Create Invoice Receipt'), ('exit', ('Perform Two-Way Match', 'Perform Two-Way Match'))) 5
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('s', 'Perform Two-Way Match')) 5
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('j', 'Perform Two-Way Match')) 10
+(('j', 'Perform Two-Way Match'), ('enter', ('Execute Payment', 'Create Goods Receipt'))) 2
+(('j', 'Perform Two-Way Match'), ('hd', 'goods_receipt')) 2
+(('enter', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('enter', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 4
+(('enter', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('syn', 'Create Invoice Receipt')) 4
+(('exit', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('enter', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 2
+(('exit', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('j', 'Create Invoice Receipt')) 2
+(('exit', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('syn', 'Create Invoice Receipt')) 2
+(('j', 'Perform Two-Way Match'), ('enter', ('Execute Payment', 'Execute Payment'))) 1
+(('enter', ('Create Goods Receipt', 'Create Goods Receipt')), ('exit', ('Create Goods Receipt', 'Execute Payment'))) 1
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('s', 'Execute Payment')) 1
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('enter', ('Execute Payment', 'Create Goods Receipt'))) 1
+(('j', 'Create Invoice Receipt'), ('enter', ('Perform Two-Way Match', 'Perform Two-Way Match'))) 2
+(('j', 'Create Invoice Receipt'), ('exit', ('Perform Two-Way Match', 'Perform Two-Way Match'))) 2
+(('hd', 'goods_receipt'), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 4
+(('syn', 'Create Invoice Receipt'), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 11
+(('syn', 'Create Invoice Receipt'), ('exit', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 8
+(('syn', 'Create Invoice Receipt'), ('j', 'Perform Two-Way Match')) 12
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('enter', ('Perform Two-Way Match', 'Create Invoice Receipt'))) 2
+(('s', 'Create Purchase Order'), ('enter', ('Approve Purchase Order', 'Approve Purchase Order'))) 3
+(('enter', ('Approve Purchase Order', 'Approve Purchase Order')), ('j', 'Approve Purchase Order')) 2
+(('exit', ('Create Purchase Order', 'Create Purchase Order')), ('hd', 'quotation')) 1
+(('exit', ('Create Goods Receipt', 'Create Goods Receipt')), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 3
+(('exit', ('Approve Purchase Order', 'Create Goods Receipt')), ('s', 'Create Goods Receipt')) 4
+(('exit', ('Approve Purchase Order', 'Create Goods Receipt')), ('j', 'Create Goods Receipt')) 2
+(('j', 'Create Goods Receipt'), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 2
+(('syn', 'Create Invoice Receipt'), ('s', 'Perform Two-Way Match')) 6
+(('hd', 'purchase_order'), ('exit', ('Create Goods Receipt', 'Create Goods Receipt'))) 2
+(('hd', 'purchase_order'), ('s', 'Create Goods Receipt')) 1
+(('hd', 'material'), ('exit', ('Create Purchase Requisition', 'Delegate Purchase Requisition Approval'))) 2
+(('enter', ('Create Invoice Receipt', 'Create Invoice Receipt')), ('exit', ('Create Invoice Receipt', 'Create Invoice Receipt'))) 2
+(('enter', ('Create Invoice Receipt', 'Create Invoice Receipt')), ('enter', ('Perform Two-Way Match', 'Perform Two-Way Match'))) 4
+(('enter', ('Create Invoice Receipt', 'Create Invoice Receipt')), ('exit', ('Perform Two-Way Match', 'Perform Two-Way Match'))) 4
+(('exit', ('Create Goods Receipt', 'Execute Payment')), ('exit', ('Execute Payment', 'Create Goods Receipt'))) 1
+(('s', 'Execute Payment'), ('exit', ('Execute Payment', 'Create Goods Receipt'))) 2
+(('j', 'Execute Payment'), ('exit', ('Execute Payment', 'Create Goods Receipt'))) 1
+(('enter', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('exit', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 3
+(('enter', ('Create Purchase Order', 'Create Purchase Order')), ('exit', ('Create Purchase Order', 'Create Purchase Order'))) 6
+(('enter', ('Create Purchase Order', 'Create Purchase Order')), ('enter', ('Create Purchase Order', 'Approve Purchase Order'))) 4
+(('exit', ('Create Request for Quotation', 'Create Purchase Order')), ('exit', ('Create Purchase Order', 'Create Purchase Order'))) 6
+(('exit', ('Create Request for Quotation', 'Create Purchase Order')), ('enter', ('Create Purchase Order', 'Approve Purchase Order'))) 2
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('hd', 'goods_receipt')) 3
+(('enter', ('Create Goods Receipt', 'Execute Payment')), ('enter', ('Execute Payment', 'Create Goods Receipt'))) 1
+(('enter', ('Create Goods Receipt', 'Execute Payment')), ('s', 'Execute Payment')) 1
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 11
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('exit', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 9
+(('exit', ('Create Invoice Receipt', 'Create Invoice Receipt')), ('enter', ('Perform Two-Way Match', 'Perform Two-Way Match'))) 2
+(('exit', ('Create Invoice Receipt', 'Create Invoice Receipt')), ('exit', ('Perform Two-Way Match', 'Perform Two-Way Match'))) 2
+(('exit', ('Create Request for Quotation', 'Create Purchase Order')), ('hd', 'quotation')) 4
+(('hd', 'quotation'), ('exit', ('Create Purchase Order', 'Create Purchase Order'))) 1
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 1
+(('enter', ('Create Goods Receipt', 'Create Goods Receipt')), ('hd', 'purchase_order')) 1
+(('enter', ('Create Invoice Receipt', 'Create Invoice Receipt')), ('j', 'Perform Two-Way Match')) 1
+(('exit', ('Create Invoice Receipt', 'Create Invoice Receipt')), ('j', 'Perform Two-Way Match')) 1
+(('syn', 'Create Invoice Receipt'), ('enter', ('Perform Two-Way Match', 'Perform Two-Way Match'))) 1
+(('syn', 'Create Invoice Receipt'), ('exit', ('Perform Two-Way Match', 'Perform Two-Way Match'))) 1
+(('hd', 'invoice_receipt'), ('enter', ('Perform Two-Way Match', 'Perform Two-Way Match'))) 1
+(('hd', 'invoice_receipt'), ('exit', ('Perform Two-Way Match', 'Perform Two-Way Match'))) 1
+(('enter', ('Approve Purchase Order', 'Create Goods Receipt')), ('enter', ('Create Goods Receipt', 'Create Goods Receipt'))) 3
+(('exit', ('Create Purchase Order', 'Approve Purchase Order')), ('enter', ('Create Goods Receipt', 'Create Goods Receipt'))) 2
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('enter', ('Perform Two-Way Match', 'Create Goods Receipt'))) 3
+(('j', 'Create Invoice Receipt'), ('enter', ('Perform Two-Way Match', 'Create Goods Receipt'))) 2
+(('enter', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('exit', ('Create Invoice Receipt', 'Create Invoice Receipt'))) 1
+(('j', 'Approve Purchase Order'), ('enter', ('Create Goods Receipt', 'Create Goods Receipt'))) 1
+(('syn', 'Approve Purchase Order'), ('enter', ('Create Goods Receipt', 'Create Goods Receipt'))) 1
+(('enter', ('Create Purchase Requisition', 'Delegate Purchase Requisition Approval')), ('hd', 'material')) 2
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('enter', ('Perform Two-Way Match', 'Create Goods Receipt'))) 1
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('syn', 'Execute Payment')) 2
+(('j', 'Create Invoice Receipt'), ('hd', 'goods_receipt')) 1
+(('enter', ('Execute Payment', 'Create Goods Receipt')), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 1
+(('s', 'Execute Payment'), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 1
+(('exit', ('Create Request for Quotation', 'Create Purchase Order')), ('enter', ('Approve Purchase Order', 'Approve Purchase Order'))) 1
+(('s', 'Create Invoice Receipt'), ('enter', ('Perform Two-Way Match', 'Create Goods Receipt'))) 1
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('exit', ('Execute Payment', 'Execute Payment'))) 2
+(('enter', ('Create Purchase Order', 'Create Purchase Order')), ('s', 'Approve Purchase Order')) 4
+(('enter', ('Create Purchase Order', 'Create Purchase Order')), ('hd', 'quotation')) 1
+(('exit', ('Create Request for Quotation', 'Create Purchase Order')), ('s', 'Approve Purchase Order')) 4
+(('enter', ('Approve Purchase Order', 'Approve Purchase Order')), ('syn', 'Approve Purchase Order')) 2
+(('enter', ('Approve Purchase Order', 'Approve Purchase Order')), ('exit', ('Approve Purchase Order', 'Approve Purchase Order'))) 3
+(('enter', ('Create Invoice Receipt', 'Create Invoice Receipt')), ('enter', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 1
+(('enter', ('Create Invoice Receipt', 'Create Invoice Receipt')), ('s', 'Create Invoice Receipt')) 1
+(('enter', ('Create Invoice Receipt', 'Create Invoice Receipt')), ('j', 'Create Invoice Receipt')) 2
+(('enter', ('Approve Purchase Order', 'Approve Purchase Order')), ('enter', ('Approve Purchase Order', 'Approve Purchase Order'))) 1
+(('enter', ('Approve Purchase Order', 'Approve Purchase Order')), ('s', 'Approve Purchase Order')) 1
+(('exit', ('Approve Purchase Order', 'Approve Purchase Order')), ('enter', ('Approve Purchase Order', 'Approve Purchase Order'))) 1
+(('exit', ('Approve Purchase Order', 'Approve Purchase Order')), ('exit', ('Approve Purchase Order', 'Approve Purchase Order'))) 1
+(('s', 'Approve Purchase Order'), ('enter', ('Approve Purchase Order', 'Approve Purchase Order'))) 1
+(('exit', ('Create Goods Receipt', 'Execute Payment')), ('exit', ('Execute Payment', 'Execute Payment'))) 4
+(('j', 'Execute Payment'), ('enter', ('Execute Payment', 'Execute Payment'))) 1
+(('syn', 'Execute Payment'), ('enter', ('Execute Payment', 'Execute Payment'))) 2
+(('hd', 'goods_receipt'), ('exit', ('Execute Payment', 'Execute Payment'))) 1
+(('exit', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('enter', ('Perform Two-Way Match', 'Create Invoice Receipt'))) 1
+(('s', 'Perform Two-Way Match'), ('enter', ('Perform Two-Way Match', 'Create Invoice Receipt'))) 1
+(('j', 'Perform Two-Way Match'), ('syn', 'Execute Payment')) 1
+(('enter', ('Create Purchase Order', 'Approve Purchase Order')), ('syn', 'Approve Purchase Order')) 1
+(('exit', ('Create Purchase Order', 'Create Purchase Order')), ('j', 'Approve Purchase Order')) 3
+(('exit', ('Create Purchase Order', 'Create Purchase Order')), ('syn', 'Approve Purchase Order')) 1
+(('s', 'Create Purchase Order'), ('exit', ('Approve Purchase Order', 'Approve Purchase Order'))) 1
+(('s', 'Create Purchase Order'), ('syn', 'Approve Purchase Order')) 1
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('exit', ('Create Invoice Receipt', 'Create Goods Receipt'))) 1
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('enter', ('Create Goods Receipt', 'Perform Two-Way Match'))) 1
+(('enter', ('Create Purchase Order', 'Create Purchase Order')), ('s', 'Create Purchase Order')) 3
+(('enter', ('Create Purchase Order', 'Create Purchase Order')), ('j', 'Approve Purchase Order')) 2
+(('enter', ('Create Purchase Order', 'Create Purchase Order')), ('exit', ('Create Purchase Order', 'Approve Purchase Order'))) 2
+(('hd', 'goods_receipt'), ('s', 'Perform Two-Way Match')) 2
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('hd', 'invoice_receipt')) 2
+(('hd', 'invoice_receipt'), ('exit', ('Perform Two-Way Match', 'Create Invoice Receipt'))) 5
+(('exit', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('hd', 'invoice_receipt')) 1
+(('exit', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('enter', ('Perform Two-Way Match', 'Execute Payment'))) 1
+(('exit', ('Create Purchase Order', 'Create Purchase Order')), ('exit', ('Create Purchase Order', 'Approve Purchase Order'))) 1
+(('enter', ('Execute Payment', 'Execute Payment')), ('j', 'Execute Payment')) 2
+(('enter', ('Execute Payment', 'Create Goods Receipt')), ('exit', ('Create Goods Receipt', 'Execute Payment'))) 1
+(('s', 'Execute Payment'), ('j', 'Execute Payment')) 1
+(('s', 'Execute Payment'), ('exit', ('Execute Payment', 'Execute Payment'))) 1
+(('j', 'Execute Payment'), ('j', 'Execute Payment')) 1
+(('hd', 'quotation'), ('enter', ('Create Purchase Order', 'Create Purchase Order'))) 1
+(('hd', 'quotation'), ('s', 'Create Purchase Order')) 1
+(('syn', 'Execute Payment'), ('j', 'Execute Payment')) 1
+(('enter', ('Create Goods Receipt', 'Perform Two-Way Match')), ('j', 'Perform Two-Way Match')) 1
+(('enter', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('syn', 'Perform Two-Way Match')) 3
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('syn', 'Perform Two-Way Match')) 1
+(('s', 'Create Invoice Receipt'), ('syn', 'Perform Two-Way Match')) 3
+(('j', 'Create Invoice Receipt'), ('syn', 'Perform Two-Way Match')) 4
+(('syn', 'Create Invoice Receipt'), ('syn', 'Perform Two-Way Match')) 1
+(('syn', 'Create Invoice Receipt'), ('j', 'Execute Payment')) 1
+(('hd', 'quotation'), ('exit', ('Create Request for Quotation', 'Create Purchase Order'))) 2
+(('enter', ('Execute Payment', 'Create Goods Receipt')), ('j', 'Create Goods Receipt')) 1
+(('exit', ('Create Request for Quotation', 'Create Purchase Order')), ('j', 'Approve Purchase Order')) 1
+(('exit', ('Create Request for Quotation', 'Create Purchase Order')), ('exit', ('Create Purchase Order', 'Approve Purchase Order'))) 2
+(('s', 'Perform Two-Way Match'), ('enter', ('Execute Payment', 'Execute Payment'))) 1
+(('s', 'Perform Two-Way Match'), ('hd', 'goods_receipt')) 1
+(('j', 'Create Invoice Receipt'), ('enter', ('Execute Payment', 'Execute Payment'))) 1
+(('enter', ('Create Request for Quotation', 'Create Purchase Order')), ('s', 'Approve Purchase Order')) 1
+(('s', 'Create Invoice Receipt'), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 1
+(('s', 'Create Invoice Receipt'), ('j', 'Create Goods Receipt')) 1
+(('j', 'Perform Two-Way Match'), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 1
+(('j', 'Perform Two-Way Match'), ('j', 'Create Goods Receipt')) 1
+(('s', 'Create Goods Receipt'), ('exit', ('Create Goods Receipt', 'Perform Two-Way Match'))) 1
+(('j', 'Create Goods Receipt'), ('syn', 'Execute Payment')) 1
+(('j', 'Create Goods Receipt'), ('exit', ('Create Goods Receipt', 'Perform Two-Way Match'))) 1
+(('hd', 'goods_receipt'), ('j', 'Perform Two-Way Match')) 1
+(('hd', 'goods_receipt'), ('exit', ('Create Goods Receipt', 'Perform Two-Way Match'))) 1
+(('s', 'Perform Two-Way Match'), ('enter', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 1
+(('s', 'Perform Two-Way Match'), ('exit', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 1
+(('j', 'Create Goods Receipt'), ('s', 'Create Invoice Receipt')) 1
+(('j', 'Create Goods Receipt'), ('j', 'Perform Two-Way Match')) 1
+(('enter', ('Perform Two-Way Match', 'Execute Payment')), ('exit', ('Execute Payment', 'Execute Payment'))) 2
+(('enter', ('Create Goods Receipt', 'Create Invoice Receipt')), ('enter', ('Perform Two-Way Match', 'Create Goods Receipt'))) 2
+(('hd', 'invoice_receipt'), ('j', 'Create Invoice Receipt')) 1
+(('hd', 'invoice_receipt'), ('enter', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 1
+(('hd', 'invoice_receipt'), ('exit', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 1
+(('exit', ('Create Purchase Order', 'Create Purchase Order')), ('s', 'Create Purchase Order')) 1
+(('exit', ('Create Purchase Order', 'Create Purchase Order')), ('enter', ('Create Purchase Order', 'Approve Purchase Order'))) 1
+(('enter', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('s', 'Perform Two-Way Match')) 3
+(('enter', ('Execute Payment', 'Execute Payment')), ('hd', 'goods_receipt')) 1
+(('exit', ('Perform Two-Way Match', 'Execute Payment')), ('hd', 'goods_receipt')) 1
+(('j', 'Execute Payment'), ('hd', 'goods_receipt')) 1
+(('syn', 'Create Goods Receipt'), ('exit', ('Create Invoice Receipt', 'Perform Two-Way Match'))) 1
+(('syn', 'Create Goods Receipt'), ('s', 'Perform Two-Way Match')) 1
+(('exit', ('Create Goods Receipt', 'Create Invoice Receipt')), ('exit', ('Execute Payment', 'Execute Payment'))) 1
+(('exit', ('Create Invoice Receipt', 'Perform Two-Way Match')), ('exit', ('Execute Payment', 'Execute Payment'))) 1
+(('s', 'Create Invoice Receipt'), ('exit', ('Execute Payment', 'Execute Payment'))) 1
+(('s', 'Perform Two-Way Match'), ('exit', ('Execute Payment', 'Execute Payment'))) 1
+(('j', 'Create Invoice Receipt'), ('exit', ('Execute Payment', 'Execute Payment'))) 1
+(('j', 'Perform Two-Way Match'), ('exit', ('Execute Payment', 'Execute Payment'))) 1
+(('syn', 'Create Invoice Receipt'), ('exit', ('Execute Payment', 'Execute Payment'))) 1
+(('hd', 'invoice_receipt'), ('enter', ('Perform Two-Way Match', 'Create Invoice Receipt'))) 1
+(('enter', ('Create Goods Receipt', 'Create Invoice Receipt')), ('enter', ('Create Invoice Receipt', 'Create Goods Receipt'))) 1
+(('hd', 'purchase_order'), ('enter', ('Create Goods Receipt', 'Execute Payment'))) 1
+(('j', 'Create Goods Receipt'), ('enter', ('Create Goods Receipt', 'Create Goods Receipt'))) 1
+(('enter', ('Perform Two-Way Match', 'Execute Payment')), ('exit', ('Execute Payment', 'Create Goods Receipt'))) 1
+(('enter', ('Create Purchase Order', 'Create Purchase Order')), ('enter', ('Create Purchase Order', 'Create Purchase Order'))) 1
+(('exit', ('Create Request for Quotation', 'Create Purchase Order')), ('enter', ('Create Purchase Order', 'Create Purchase Order'))) 1
+(('s', 'Create Purchase Order'), ('enter', ('Create Purchase Order', 'Create Purchase Order'))) 1
+(('exit', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('s', 'Perform Two-Way Match')) 1
+(('enter', ('Perform Two-Way Match', 'Create Invoice Receipt')), ('enter', ('Perform Two-Way Match', 'Create Invoice Receipt'))) 1
